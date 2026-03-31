@@ -64,7 +64,7 @@ export default function HomePage() {
           </h1>
 
           <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Nous accompagnons les professionnels et entrepreneurs dans leurs décisions en placement, assurance et sécurité financière, avec rigueur et transparence.
+            Nous accompagnons les professionnels et entrepreneurs dans leurs décisions en placement*, assurance et sécurité financière, avec rigueur et transparence.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -124,7 +124,7 @@ export default function HomePage() {
                 Chez BBFAP, nous croyons que de bonnes décisions financières reposent sur une compréhension claire de votre situation et de vos objectifs.
               </p>
               <p>
-                Nous accompagnons principalement des professionnels et des entrepreneurs dans la gestion de leur patrimoine, en proposant des stratégies cohérentes en placement, assurance et planification financière.
+                Nous accompagnons principalement des professionnels et des entrepreneurs dans la gestion de leur patrimoine, en proposant des stratégies cohérentes en placement*, assurance et planification financière.
               </p>
               <p>
                 Notre rôle est simple : vous aider à structurer vos décisions avec méthode, clarté et discipline.
@@ -150,7 +150,7 @@ export default function HomePage() {
             {[
               {
                 icon: TrendingUp,
-                title: 'Placements et gestion de patrimoine',
+                title: 'Placements* et gestion de patrimoine',
                 description: "Des stratégies d'investissement adaptées à votre profil, vos objectifs et votre réalité professionnelle.",
                 color: 'text-blue-700',
                 bg: 'bg-blue-50',

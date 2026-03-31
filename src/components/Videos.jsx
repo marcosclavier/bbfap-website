@@ -24,7 +24,7 @@ const videos = [
   {
     title: 'Investir par soi-même vs avec un conseiller',
     duration: '11:48',
-    description: 'Gérer vos placements seul ou avec un conseiller — quelle est la meilleure option?',
+    description: 'Gérer vos placements* seul ou avec un conseiller — quelle est la meilleure option?',
     image: '/images/original/general-4.webp',
   },
   {
@@ -80,7 +80,7 @@ export default function Videos() {
             Apprenez à nous connaître sur YouTube
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Pas encore prêt à faire le saut? Découvrez nos capsules éducatives sur la fiscalité, les assurances et les placements.
+            Pas encore prêt à faire le saut? Découvrez nos capsules éducatives sur la fiscalité, les assurances et les placements*.
           </p>
         </div>
 

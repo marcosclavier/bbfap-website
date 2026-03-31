@@ -48,18 +48,18 @@ const services = [
   {
     id: 'placements',
     icon: TrendingUp,
-    title: 'Placements',
+    title: 'Placements*',
     subtitle: 'Gestion de portefeuille inspirée de Warren Buffett',
     description: 'Notre approche favorise les investissements à long terme dans des entreprises solides avec un avantage concurrentiel durable. Frédéric Babeux, Gestionnaire de Portefeuille (CIM), offre la gestion discrétionnaire — un service que les grandes banques réservent à leurs meilleurs clients.',
     highlights: [
       'Portefeuilles personnalisés — actions, obligations, FNB',
       'Gestion discrétionnaire pour clients incorporés',
-      'Optimisation fiscale des placements en société',
+      'Optimisation fiscale des placements* en société',
       'Frais à honoraires — aucune commission cachée',
       'Stratégies de décaissement à la retraite',
     ],
     image: '/images/original/general-3.webp',
-    cta: 'En savoir plus sur les placements',
+    cta: 'En savoir plus sur les placements*',
     color: 'amber',
     accent: 'bg-amber-600',
     light: 'bg-amber-50',
@@ -89,7 +89,7 @@ export default function Services() {
             Trois expertises. Une équipe.
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Fiscalité, assurances et placements — une gestion de patrimoine complète et intégrée pour les professionnels et entrepreneurs incorporés.
+            Fiscalité, assurances et placements* — une gestion de patrimoine complète et intégrée pour les professionnels et entrepreneurs incorporés.
           </p>
         </div>
 

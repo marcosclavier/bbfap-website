@@ -54,7 +54,7 @@ export default function ServicesPage() {
             </h2>
             <div className="space-y-4 text-white/80 text-lg leading-relaxed max-w-3xl mx-auto">
               <p>
-                Chez BBFAP, nous offrons des services financiers complets qui s'articulent autour de trois piliers essentiels : la fiscalité, les assurances et les placements.
+                Chez BBFAP, nous offrons des services financiers complets qui s'articulent autour de trois piliers essentiels : la fiscalité, les assurances et les placements*.
               </p>
               <p>
                 Notre objectif est de vous aider à prendre des décisions cohérentes, en tenant compte de votre réalité professionnelle, de votre structure corporative et de vos objectifs à long terme.
@@ -85,7 +85,7 @@ export default function ServicesPage() {
                 icon: ClipboardCheck,
                 step: '01',
                 title: 'Évaluation',
-                description: "Nous analysons votre situation dans son ensemble : revenus, structure, fiscalité, protections existantes et stratégie de placement. Cette étape permet d'identifier les opportunités et les incohérences.",
+                description: "Nous analysons votre situation dans son ensemble : revenus, structure, fiscalité, protections existantes et stratégie de placement*. Cette étape permet d'identifier les opportunités et les incohérences.",
                 color: 'text-blue-700',
                 bg: 'bg-blue-50',
                 border: 'border-blue-100',
@@ -94,7 +94,7 @@ export default function ServicesPage() {
                 icon: Settings,
                 step: '02',
                 title: 'Implantation',
-                description: "Nous mettons en place des stratégies adaptées à votre réalité, en sélectionnant des solutions concrètes en fiscalité, assurances et placements.",
+                description: "Nous mettons en place des stratégies adaptées à votre réalité, en sélectionnant des solutions concrètes en fiscalité, assurances et placements*.",
                 color: 'text-indigo-700',
                 bg: 'bg-indigo-50',
                 border: 'border-indigo-100',
@@ -164,7 +164,7 @@ export default function ServicesPage() {
                   Nous vous accompagnons pour structurer adéquatement vos revenus, optimiser votre réalité corporative et réduire les frictions fiscales, dans le respect des règles en vigueur.
                 </p>
                 <p>
-                  Notre approche vise la cohérence entre vos décisions fiscales, vos placements et vos protections.
+                  Notre approche vise la cohérence entre vos décisions fiscales, vos placements* et vos protections.
                 </p>
               </div>
             </div>
@@ -233,14 +233,14 @@ export default function ServicesPage() {
             </div>
             <div className={`fade-in ${placementsInView ? 'visible' : ''}`} style={{ transitionDelay: '150ms' }}>
               <h2 className="text-amber-600 text-xl font-semibold uppercase tracking-widest mb-3">
-                Placements
+                Placements*
               </h2>
               <h3 id="placements-heading" className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                 Structurer et faire croître votre capital
               </h3>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Les placements doivent être alignés avec votre profil, votre horizon et votre réalité fiscale.
+                  Les placements* doivent être alignés avec votre profil, votre horizon et votre réalité fiscale.
                 </p>
                 <p>
                   Nous vous donnons accès à une gamme complète de solutions, incluant actions, obligations et fonds négociés en bourse, afin de construire des portefeuilles diversifiés et adaptés.
@@ -266,7 +266,7 @@ export default function ServicesPage() {
             </h2>
             <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
               <p>
-                Fiscalité, assurances et placements ne doivent pas être gérés séparément.
+                Fiscalité, assurances et placements* ne doivent pas être gérés séparément.
               </p>
               <p>
                 Nous assurons une cohérence entre ces dimensions afin d'éviter les contradictions et maximiser l'efficacité globale de vos décisions.
@@ -328,7 +328,7 @@ export default function ServicesPage() {
                 Une bonne structure financière commence toujours par une bonne compréhension.
               </p>
               <p>
-                Prenez rendez-vous pour échanger sur votre situation actuelle et voir comment nos services en fiscalité, assurances et placements peuvent vous apporter plus de clarté et de cohérence.
+                Prenez rendez-vous pour échanger sur votre situation actuelle et voir comment nos services en fiscalité, assurances et placements* peuvent vous apporter plus de clarté et de cohérence.
               </p>
             </div>
             <Link

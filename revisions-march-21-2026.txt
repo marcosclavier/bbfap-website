@@ -1,0 +1,14 @@
+Je suggère un * aux endroits ou il indique le mot "placement" pour référer à la divulgation de bas de page.
+
+J'ai révisé le site web et tout comme l'a suggéré Martin Boileau,
+il faudrait indiquer un astérix * à TOUS LES ENDROITS ou il indique le mot "placement" pour référer à la divulgation de bas de page 
+et étant donné qu'il ne détient pas une page qui porte UNIQUE MENT sur les placements.
+ 
+De plus, en regard à la divulgation de PEAK, 
+ 
+Voici,ci-dessous, celle que nous retrouvons sur le site web en bas de page:
+*Frédéric Babeux est rattaché auprès de Valeurs Mobilières PEAK Inc. à titre de Gestionnaire de Portefeuille. Valeurs Mobilières PEAK Inc. est un courtier de plein exercice inscrit auprès de l'OCRI, membre du Fonds canadien de protection des investisseurs (FCPI). Les placements sont dissociés de l'offre de service de Bélanger, Brosseau Fiscalité, Assurance & Placements Inc. Bélanger, Brosseau Fiscalité, Assurance & Placements Inc. est un cabinet indépendant inscrit auprès de l'Autorité des marchés financiers (AMF) dans la discipline d'Assurance de personnes.
+ 
+*****Il faudrait la modifier pour ce qui suit afin de clarifier les produits /services offerts par PEAK:
+ 
+*Frédéric Babeux est rattaché auprès de Valeurs Mobilières PEAK Inc. à titre de Gestionnaire de Portefeuille.  Valeurs Mobilières PEAK Inc. est un courtier en placement membre de l’Organisme canadien de réglementation du commerce des investissements (OCRI), limitant ses responsabilités aux produits de placement tel que les actions, obligations, FNB et fonds mutuels.  Valeurs Mobilières PEAK Inc. est un membre du Fonds canadien de protection des investisseurs (FCPI). Veuillez consulter le https://www.fcpi.ca pour plus de détails.  Les placement offerts par Valeurs mobilières PEAK sont dissociés de l'offre de service de Bélanger, Brosseau Fiscalité, Assurance & Placements Inc.  Bélanger, Brosseau Fiscalité, Assurance & Placements Inc. est un cabinet indépendant inscrit auprès de l'Autorité des marchés financiers (AMF) dans la discipline d'Assurance de personnes.

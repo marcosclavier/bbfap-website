@@ -4,7 +4,7 @@ import { Facebook, Linkedin, Youtube } from 'lucide-react';
 const serviceLinks = [
   { label: 'Fiscalité', to: '/services' },
   { label: 'Assurances', to: '/services' },
-  { label: 'Placements', to: '/services' },
+  { label: 'Placements*', to: '/services' },
 ];
 
 const navLinks = [
@@ -28,7 +28,7 @@ export default function Footer() {
               loading="lazy"
             />
             <p className="text-blue-200 text-sm leading-relaxed max-w-sm mb-6">
-              Cabinet indépendant spécialisé en gestion de patrimoine pour entrepreneurs et professionnels incorporés dans la grande région de Montréal. Fiscalité, assurances et placements — une équipe, une vision.
+              Cabinet indépendant spécialisé en gestion de patrimoine pour entrepreneurs et professionnels incorporés dans la grande région de Montréal. Fiscalité, assurances et placements* — une équipe, une vision.
             </p>
             <div className="flex gap-3">
               <a
@@ -94,7 +94,7 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-8">
           {/* Legal disclosure */}
           <p className="text-blue-300/60 text-xs leading-relaxed mb-4 max-w-4xl">
-            *Frédéric Babeux est rattaché auprès de Valeurs Mobilières PEAK Inc. à titre de Gestionnaire de Portefeuille. Valeurs Mobilières PEAK Inc. est un courtier de plein exercice inscrit auprès de l'OCRI, membre du Fonds canadien de protection des investisseurs (FCPI). Les placements sont dissociés de l'offre de service de Bélanger, Brosseau Fiscalité, Assurance & Placements Inc. Bélanger, Brosseau Fiscalité, Assurance & Placements Inc. est un cabinet indépendant inscrit auprès de l'Autorité des marchés financiers (AMF) dans la discipline d'Assurance de personnes.
+            *Frédéric Babeux est rattaché auprès de Valeurs Mobilières PEAK Inc. à titre de Gestionnaire de Portefeuille.  Valeurs Mobilières PEAK Inc. est un courtier en placement membre de l'Organisme canadien de réglementation du commerce des investissements (OCRI), limitant ses responsabilités aux produits de placement tel que les actions, obligations, FNB et fonds mutuels.  Valeurs Mobilières PEAK Inc. est un membre du Fonds canadien de protection des investisseurs (FCPI). Veuillez consulter le <a href="https://www.fcpi.ca" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-200 transition-colors">https://www.fcpi.ca</a> pour plus de détails.  Les placements offerts par Valeurs mobilières PEAK sont dissociés de l'offre de service de Bélanger, Brosseau Fiscalité, Assurance & Placements Inc.  Bélanger, Brosseau Fiscalité, Assurance & Placements Inc. est un cabinet indépendant inscrit auprès de l'Autorité des marchés financiers (AMF) dans la discipline d'Assurance de personnes.
           </p>
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="text-blue-300/50 text-xs">

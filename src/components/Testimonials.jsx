@@ -4,13 +4,13 @@ import { useInView } from '../hooks/useInView';
 
 const testimonials = [
   {
-    text: "Depuis que je travaille avec l'équipe de Bélanger Brosseau, j'ai enfin l'impression que mon patrimoine est géré de façon cohérente — placements, fiscalité et assurances, tout est intégré. Une équipe exceptionnelle.",
+    text: "Depuis que je travaille avec l'équipe de Bélanger Brosseau, j'ai enfin l'impression que mon patrimoine est géré de façon cohérente — placements*, fiscalité et assurances, tout est intégré. Une équipe exceptionnelle.",
     author: 'Dentiste incorporé',
     location: 'Rive-Sud de Montréal',
     rating: 5,
   },
   {
-    text: "L'accès direct à Annie, notre fiscaliste attitrée, est inestimable. Elle a trouvé des stratégies pour ma société de gestion que je n'aurais jamais découvertes seul. Frédéric est toujours disponible et ses conseils en placements sont avisés.",
+    text: "L'accès direct à Annie, notre fiscaliste attitrée, est inestimable. Elle a trouvé des stratégies pour ma société de gestion que je n'aurais jamais découvertes seul. Frédéric est toujours disponible et ses conseils en placements* sont avisés.",
     author: 'Médecin incorporé',
     location: 'Montréal',
     rating: 5,

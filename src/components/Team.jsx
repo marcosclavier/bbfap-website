@@ -64,7 +64,7 @@ export default function Team() {
             Des experts à votre service
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Une équipe complémentaire unissant expertise en placements, fiscalité et assurances pour une gestion de patrimoine intégrée.
+            Une équipe complémentaire unissant expertise en placements*, fiscalité et assurances pour une gestion de patrimoine intégrée.
           </p>
         </div>
 

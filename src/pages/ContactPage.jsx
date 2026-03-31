@@ -146,7 +146,7 @@ export default function ContactPage() {
                       className="w-full px-4 py-3 border border-gray-300 rounded-xl text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-shadow bg-white"
                     >
                       <option value="">Sélectionnez un sujet</option>
-                      <option value="placements">Placements et gestion de patrimoine</option>
+                      <option value="placements">Placements* et gestion de patrimoine</option>
                       <option value="assurances">Assurance de personnes</option>
                       <option value="fiscalite">Fiscalité et optimisation</option>
                       <option value="general">Consultation générale</option>

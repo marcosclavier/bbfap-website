@@ -5,7 +5,7 @@ const milestones = [
   {
     year: 'Années 90',
     title: 'Fondation de l\'entreprise',
-    description: 'Annie Bélanger et Louis-Pierre Brosseau fondent Bélanger, Brosseau Fiscalité, Assurances & Placements Inc. — une vision ancrée dans trois grandes spécialisations : la fiscalité, les assurances et les placements.',
+    description: 'Annie Bélanger et Louis-Pierre Brosseau fondent Bélanger, Brosseau Fiscalité, Assurances & Placements Inc. — une vision ancrée dans trois grandes spécialisations : la fiscalité, les assurances et les placements*.',
   },
   {
     year: '2019',
