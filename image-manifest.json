@@ -1,0 +1,81 @@
+{
+  "original_images": [
+    {
+      "filename": "images/original/hero.webp",
+      "purpose": "hero",
+      "alt": "L3WDK-66146FMM_BlangerA_04_edited.jpg"
+    },
+    {
+      "filename": "images/original/general.webp",
+      "purpose": "general",
+      "alt": "Review 3 B\u00e9langer Brosseau Fiscalit\u00e9 Assurances & Placements.PNG"
+    },
+    {
+      "filename": "images/original/general-1.webp",
+      "purpose": "general",
+      "alt": ""
+    },
+    {
+      "filename": "images/original/general-2.webp",
+      "purpose": "general",
+      "alt": ""
+    },
+    {
+      "filename": "images/original/general-3.webp",
+      "purpose": "general",
+      "alt": ""
+    },
+    {
+      "filename": "images/original/general-4.webp",
+      "purpose": "general",
+      "alt": ""
+    },
+    {
+      "filename": "images/original/general-5.webp",
+      "purpose": "general",
+      "alt": ""
+    },
+    {
+      "filename": "images/original/general-6.webp",
+      "purpose": "general",
+      "alt": ""
+    },
+    {
+      "filename": "images/original/general-7.webp",
+      "purpose": "general",
+      "alt": ""
+    },
+    {
+      "filename": "images/original/general-8.webp",
+      "purpose": "general",
+      "alt": ""
+    },
+    {
+      "filename": "images/original/general-9.webp",
+      "purpose": "general",
+      "alt": ""
+    }
+  ],
+  "generated_images": [
+    {
+      "filename": "images/generated/logo.png",
+      "purpose": "logo",
+      "has_transparency": true
+    },
+    {
+      "filename": "images/generated/section-about.webp",
+      "purpose": "section-about"
+    },
+    {
+      "filename": "images/generated/section-portfolio.webp",
+      "purpose": "section-portfolio"
+    },
+    {
+      "filename": "images/generated/section-contact.webp",
+      "purpose": "section-contact"
+    }
+  ],
+  "logo_source": "generated",
+  "total_original": 11,
+  "total_generated": 4
+}
