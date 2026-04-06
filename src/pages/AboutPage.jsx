@@ -175,21 +175,21 @@ export default function AboutPage() {
               Notre Clientèle
             </span>
             <h2 id="clientele-heading" className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-              Un accompagnement dédié aux professionnels et entrepreneurs
+              Un accompagnement personnalisé pour chaque client
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-8">
-              Aujourd'hui, BBFAP accompagne avec fierté plus de 100 entrepreneurs et professionnels incorporés, dont :
+              Aujourd'hui, BBFAP accompagne avec fierté plus de 150 entrepreneurs, professionnels et familles, dont :
             </p>
           </div>
 
           <div className={`grid grid-cols-2 sm:grid-cols-3 gap-4 mb-8 fade-in ${clienteleInView ? 'visible' : ''}`} style={{ transitionDelay: '150ms' }}>
             {[
-              'Médecins',
-              'Dentistes',
-              'Optométristes',
+              'Entrepreneurs',
+              'Professionnels incorporés',
+              'Médecins et dentistes',
+              'Familles et couples',
               'Investisseurs immobiliers',
-              'Consultants',
-              'Familles disposant d\'un patrimoine important',
+              'Propriétaires d\'entreprise',
             ].map((item) => (
               <div key={item} className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl border border-gray-100">
                 <svg className="w-5 h-5 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">

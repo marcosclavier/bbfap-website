@@ -28,7 +28,7 @@ export default function Footer() {
               loading="lazy"
             />
             <p className="text-blue-200 text-sm leading-relaxed max-w-sm mb-6">
-              Cabinet indépendant spécialisé en gestion de patrimoine pour entrepreneurs et professionnels incorporés dans la grande région de Montréal. Fiscalité, assurances et placements* — une équipe, une vision.
+              Cabinet indépendant à Saint-Hubert spécialisé en gestion de patrimoine pour entrepreneurs, professionnels et familles sur la Rive-Sud de Montréal. Fiscalité, assurances et placements* — une équipe, une vision.
             </p>
             <div className="flex gap-3">
               <a
@@ -101,7 +101,7 @@ export default function Footer() {
               © {new Date().getFullYear()} Bélanger, Brosseau Fiscalité, Assurances & Placements Inc. Tous droits réservés.
             </p>
             <p className="text-blue-300/30 text-xs">
-              Régions desservies : Grand Montréal, Rive-Sud, Laval et environs
+              5215 Chemin Chambly, Saint-Hubert, QC J3Y 3N5 | Rive-Sud de Montréal
             </p>
           </div>
         </div>

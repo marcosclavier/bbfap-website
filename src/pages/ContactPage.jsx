@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import { Send, Facebook, Linkedin, Youtube } from 'lucide-react';
+import { Send, Facebook, Linkedin, Youtube, MapPin } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 
 export default function ContactPage() {
@@ -216,6 +216,17 @@ export default function ContactPage() {
             {/* Right: Trust signals */}
             <div className={`fade-in ${contentInView ? 'visible' : ''}`} style={{ transitionDelay: '150ms' }}>
               <div className="bg-gray-50 border border-gray-200 rounded-3xl p-8 space-y-6 lg:sticky lg:top-28">
+                <div className="flex gap-4 pb-6 border-b border-gray-200">
+                  <div className="w-10 h-10 bg-blue-100 border border-blue-200 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-5 h-5 text-blue-600" />
+                  </div>
+                  <div>
+                    <p className="text-gray-900 font-semibold">Notre bureau</p>
+                    <p className="text-gray-600 text-sm">5215 Chemin Chambly</p>
+                    <p className="text-gray-600 text-sm">Saint-Hubert, QC J3Y 3N5</p>
+                  </div>
+                </div>
+
                 <h3 className="text-gray-900 font-bold text-xl mb-6">Pourquoi choisir BBFAP?</h3>
 
                 {[
@@ -254,6 +265,24 @@ export default function ContactPage() {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Map */}
+      <section className="py-12 bg-gray-50" aria-labelledby="map-heading">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 id="map-heading" className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8 text-center">
+            Nous trouver
+          </h2>
+          <div className="w-full h-[400px] rounded-3xl overflow-hidden shadow-lg border border-gray-200">
+            <iframe
+              title="Emplacement de BBFAP — 5215 Chemin Chambly, Saint-Hubert"
+              src="https://www.google.com/maps?q=5215+Chemin+Chambly+Saint-Hubert+QC+J3Y+3N5&output=embed"
+              className="w-full h-full border-0"
+              loading="lazy"
+              allowFullScreen
+            />
           </div>
         </div>
       </section>

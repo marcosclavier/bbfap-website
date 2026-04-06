@@ -53,18 +53,18 @@ export default function HomePage() {
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
             <span className="text-white/90 text-sm font-medium tracking-wide uppercase">
-              Conseiller Financier Indépendant
+              Conseiller Financier Indépendant — Saint-Hubert
             </span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight tracking-tight mb-6 max-w-5xl mx-auto">
             Des stratégies financières réfléchies pour les{' '}
-            <span className="text-amber-400">professionnels</span>{' '}
-            d'aujourd'hui
+            <span className="text-amber-400">entrepreneurs et familles</span>{' '}
+            d'ici
           </h1>
 
           <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Nous accompagnons les professionnels et entrepreneurs dans leurs décisions en placement*, assurance et sécurité financière, avec rigueur et transparence.
+            Basés à Saint-Hubert, nous accompagnons les entrepreneurs, professionnels et familles de la Rive-Sud dans leurs décisions en placement*, assurance et sécurité financière, avec rigueur et proximité.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -124,10 +124,10 @@ export default function HomePage() {
                 Chez BBFAP, nous croyons que de bonnes décisions financières reposent sur une compréhension claire de votre situation et de vos objectifs.
               </p>
               <p>
-                Nous accompagnons principalement des professionnels et des entrepreneurs dans la gestion de leur patrimoine, en proposant des stratégies cohérentes en placement*, assurance et planification financière.
+                Nous accompagnons des entrepreneurs, des professionnels et des familles dans la gestion de leur patrimoine, en proposant des stratégies cohérentes en placement*, assurance et planification financière.
               </p>
               <p>
-                Notre rôle est simple : vous aider à structurer vos décisions avec méthode, clarté et discipline.
+                Notre rôle : vous aider à prendre les bonnes décisions financières, avec méthode, clarté et une vraie relation de confiance.
               </p>
             </div>
           </div>
@@ -283,11 +283,11 @@ export default function HomePage() {
                 Notre Approche
               </span>
               <h2 id="trust-heading" className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-                Une approche humaine, professionnelle et disciplinée
+                Une relation humaine au coeur de chaque décision
               </h2>
               <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
                 <p>
-                  BBFAP accompagne des clients qui recherchent plus qu'un simple produit financier. Nous privilégions une relation basée sur la confiance, la constance et la clarté.
+                  BBFAP, c'est avant tout une relation de confiance. Nous prenons le temps de bien comprendre votre réalité — vos projets, vos préoccupations, votre vision — pour vous accompagner avec constance et transparence.
                 </p>
                 <p>
                   Notre objectif est de vous aider à prendre des décisions financières cohérentes, alignées avec vos priorités personnelles et professionnelles, dans un cadre structuré et transparent.
@@ -331,7 +331,7 @@ export default function HomePage() {
               Discutons de votre situation financière
             </h2>
             <p className="text-blue-200 text-lg leading-relaxed mb-4 max-w-2xl mx-auto">
-              Que vous soyez en début de parcours ou en phase d'optimisation, une discussion permet souvent de clarifier les prochaines étapes.
+              Que vous soyez en début de carrière, en pleine croissance ou en phase d'optimisation, une discussion permet souvent de clarifier les prochaines étapes.
             </p>
             <p className="text-blue-200 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
               Prenez rendez-vous pour échanger sur vos objectifs et voir comment nous pouvons vous accompagner avec une approche adaptée et réfléchie.

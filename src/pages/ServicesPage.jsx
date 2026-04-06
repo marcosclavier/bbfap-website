@@ -287,14 +287,14 @@ export default function ServicesPage() {
               Clientèle
             </span>
             <h2 id="services-clientele-heading" className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-              Une expertise adaptée aux professionnels incorporés
+              Une expertise adaptée à votre réalité
             </h2>
             <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
               <p>
-                Nos services s'adressent principalement aux entrepreneurs et professionnels incorporés qui souhaitent structurer efficacement leur situation financière.
+                Nos services s'adressent aux entrepreneurs, professionnels et familles qui souhaitent structurer efficacement leur situation financière.
               </p>
               <p>
-                Nous comprenons les enjeux liés à la gestion corporative, à l'optimisation fiscale et à la croissance du patrimoine dans un contexte professionnel exigeant.
+                Que vous soyez incorporé, salarié ou en transition de carrière, nous comprenons les enjeux liés à la gestion de patrimoine, à l'optimisation fiscale et à la planification financière.
               </p>
             </div>
           </div>
