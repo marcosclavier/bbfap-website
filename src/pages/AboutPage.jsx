@@ -27,8 +27,8 @@ export default function AboutPage() {
       {/* Page Hero */}
       <section className="relative pt-32 pb-20 overflow-hidden" aria-labelledby="about-hero-heading">
         <div className="absolute inset-0">
-          <img src="/images/original/hero.webp" alt="" className="w-full h-full object-cover" loading="eager" />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0f2448]/90 via-[#1B3A6B]/85 to-[#0f2448]/90" />
+          <img src="/images/team/team-dark.webp" alt="" className="w-full h-full object-cover object-center" loading="eager" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0f2448]/85 via-[#1B3A6B]/80 to-[#0f2448]/85" />
         </div>
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
@@ -66,9 +66,9 @@ export default function AboutPage() {
             <div className={`fade-in ${originsInView ? 'visible' : ''}`}>
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/original/team.webp"
+                  src="/images/team/team-white.webp"
                   alt="Annie Bélanger et Frédéric Babeux — BBFAP"
-                  className="w-full h-[400px] object-cover"
+                  className="w-full h-[400px] object-cover object-top"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1B3A6B]/40 to-transparent" />
@@ -120,9 +120,9 @@ export default function AboutPage() {
             <div className={`order-1 lg:order-2 fade-in ${releveInView ? 'visible' : ''}`}>
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/original/general-1.webp"
-                  alt="Transition et relève chez BBFAP"
-                  className="w-full h-[400px] object-cover"
+                  src="/images/team/frederic-portrait.webp"
+                  alt="Frédéric Babeux — relève de BBFAP"
+                  className="w-full h-[400px] object-cover object-top"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1B3A6B]/40 to-transparent" />
@@ -139,9 +139,9 @@ export default function AboutPage() {
             <div className={`fade-in ${evolutionInView ? 'visible' : ''}`}>
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/generated/section-portfolio.webp"
-                  alt="Planification financière — BBFAP"
-                  className="w-full h-[400px] object-cover"
+                  src="/images/team/frederic-window.webp"
+                  alt="Frédéric Babeux, gestionnaire de portefeuille — BBFAP"
+                  className="w-full h-[400px] object-cover object-center"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1B3A6B]/40 to-transparent" />

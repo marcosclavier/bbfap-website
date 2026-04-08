@@ -36,12 +36,12 @@ export default function HomePage() {
       >
         <div className="absolute inset-0">
           <img
-            src="/images/original/hero.webp"
+            src="/images/team/frederic-arms-crossed.webp"
             alt=""
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-center"
             loading="eager"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0f2448]/90 via-[#1B3A6B]/80 to-[#0f2448]/85" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0f2448]/85 via-[#1B3A6B]/75 to-[#0f2448]/80" />
         </div>
 
         <div className="absolute inset-0 opacity-5" style={{
@@ -265,9 +265,9 @@ export default function HomePage() {
             <div className={`relative fade-in ${aboutInView ? 'visible' : ''}`}>
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/original/team.webp"
+                  src="/images/team/team-white.webp"
                   alt="Annie Bélanger et Frédéric Babeux — BBFAP"
-                  className="w-full h-[500px] object-cover"
+                  className="w-full h-[500px] object-cover object-top"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1B3A6B]/60 to-transparent" />
