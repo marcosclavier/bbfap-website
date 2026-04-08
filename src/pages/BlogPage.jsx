@@ -164,6 +164,16 @@ export default function BlogPage() {
                 className={`group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col fade-in ${articlesInView ? 'visible' : ''}`}
                 style={{ transitionDelay: `${Math.min(i * 60, 480)}ms` }}
               >
+                {post.image && (
+                  <div className="relative aspect-video overflow-hidden bg-gray-100">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                    />
+                  </div>
+                )}
                 <div className="p-6 flex flex-col flex-1">
                   <div className="flex items-center gap-3 mb-3">
                     <span className={`text-xs font-semibold px-2.5 py-0.5 rounded-full ${categoryColors[post.category] || 'bg-gray-100 text-gray-700'}`}>

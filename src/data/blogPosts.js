@@ -7,6 +7,7 @@ export const blogPosts = [
     date: '2025-06-02',
     readTime: '3 min',
     category: 'Impôts',
+    image: '/images/blog/gel-successoral.jpg',
     excerpt: "Le gel successoral est une stratégie fiscale puissante qui permet aux entrepreneurs de figer la valeur de leurs actifs aujourd'hui afin de limiter l'impôt au décès. Découvrez pourquoi il est essentiel d'y penser avant qu'il ne soit trop tard et comment cette planification peut protéger votre patrimoine familial.",
     hasVideo: false,
     content: [
@@ -26,6 +27,7 @@ export const blogPosts = [
     date: '2025-05-09',
     readTime: '5 min',
     category: 'Placements',
+    image: '/images/blog/rembourser-hypotheque.jpg',
     excerpt: "C'est l'un des dilemmes financiers les plus courants : devriez-vous utiliser vos surplus pour rembourser votre hypothèque plus vite ou les investir? La réponse dépend de plusieurs facteurs, dont votre taux hypothécaire, votre tolérance au risque et votre situation fiscale.",
     hasVideo: false,
     content: [
@@ -45,6 +47,7 @@ export const blogPosts = [
     date: '2025-04-04',
     readTime: '1 min',
     category: 'Placements',
+    image: '/images/blog/tarifs-trump.jpg',
     excerpt: "Suite à l'annonce des tarifs réciproques par le président Trump le 2 avril 2025, les marchés ont réagi fortement. Dans cette courte vidéo, nous expliquons pourquoi il est crucial de rester investi malgré la volatilité.",
     hasVideo: true,
     content: [
@@ -60,6 +63,7 @@ export const blogPosts = [
     date: '2025-02-19',
     readTime: '2 min',
     category: 'Conseils',
+    image: '/images/blog/comment-trouver-conseiller.jpg',
     excerpt: "Choisir un conseiller financier est une décision importante qui peut avoir un impact majeur sur votre avenir financier. Voici les critères essentiels à considérer pour trouver le professionnel qui saura répondre à vos besoins spécifiques.",
     hasVideo: false,
     content: [
@@ -78,6 +82,7 @@ export const blogPosts = [
     date: '2024-11-06',
     readTime: '3 min',
     category: 'Fiscalité',
+    image: '/images/blog/taux-imposition-compagnie.jpg',
     excerpt: "Utiliser une société de gestion pour loger vos actifs peut être avantageux, mais il est essentiel de bien comprendre les taux d'imposition sur les différents types de revenus : intérêts, dividendes et gains en capital.",
     hasVideo: true,
     content: [
@@ -94,6 +99,7 @@ export const blogPosts = [
     date: '2024-09-04',
     readTime: '4 min',
     category: 'Assurances',
+    image: '/images/blog/etre-son-propre-banquier.jpg',
     excerpt: "L'assurance vie permanente peut servir bien au-delà de la simple protection en cas de décès. Découvrez comment les entrepreneurs avisés l'utilisent comme un outil bancaire pour accéder à des liquidités, bénéficier d'avantages fiscaux et protéger leurs actifs.",
     hasVideo: false,
     content: [
@@ -113,6 +119,7 @@ export const blogPosts = [
     date: '2024-08-26',
     readTime: '2 min',
     category: 'Placements',
+    image: '/images/blog/cpg-obligation.jpg',
     excerpt: "Les CPG sont populaires, mais sont-ils toujours le meilleur choix? Nous avons comparé un CPG à une obligation gouvernementale à escompte pour un client et avons économisé 6 183$ en impôts grâce à un traitement fiscal plus avantageux.",
     hasVideo: false,
     content: [
@@ -130,6 +137,7 @@ export const blogPosts = [
     date: '2024-08-06',
     readTime: '4 min',
     category: 'Assurances',
+    image: '/images/blog/assurances-essentielles.jpg',
     excerpt: "En tant qu'entrepreneur, la gestion des risques est cruciale. Découvrez les quatre assurances essentielles : vie, frais généraux, invalidité et maladies graves, et pourquoi elles sont indispensables.",
     hasVideo: false,
     content: [
@@ -146,6 +154,7 @@ export const blogPosts = [
     date: '2024-06-17',
     readTime: '3 min',
     category: 'Fiscalité',
+    image: '/images/blog/client-fortune-sans-plan.jpg',
     excerpt: "Jean, un entrepreneur prospère, n'avait aucun plan successoral malgré un patrimoine important. Sans intervention, ses héritiers auraient fait face à une triple imposition. Découvrez comment nous avons structuré une solution complète pour protéger son héritage.",
     hasVideo: false,
     content: [
@@ -165,6 +174,7 @@ export const blogPosts = [
     date: '2024-06-13',
     readTime: '3 min',
     category: 'Planification Successorale',
+    image: '/images/blog/assurance-vie-successoral.jpg',
     excerpt: "L'assurance vie joue un rôle clé en fournissant des fonds pour couvrir les coûts après votre décès. Pour les entrepreneurs incorporés, c'est souvent l'outil de transfert de patrimoine privilégié.",
     hasVideo: false,
     content: [
@@ -180,6 +190,7 @@ export const blogPosts = [
     date: '2024-06-12',
     readTime: '4 min',
     category: 'Planification Successorale',
+    image: '/images/blog/bases-planification.jpg',
     excerpt: "La planification successorale est une étape cruciale pour assurer que vos biens sont distribués selon vos souhaits. Découvrez les éléments essentiels : testament, mandat d'inaptitude, fiducie et directives anticipées.",
     hasVideo: false,
     content: [
@@ -196,6 +207,7 @@ export const blogPosts = [
     date: '2024-04-30',
     readTime: '3 min',
     category: 'Assurances',
+    image: '/images/blog/entreprise-survivra.jpg',
     excerpt: "Un décès, une invalidité ou une maladie grave peuvent avoir des conséquences dévastatrices sur votre entreprise. Découvrez les impacts et les mesures pour atténuer ces risques.",
     hasVideo: false,
     content: [
@@ -211,6 +223,7 @@ export const blogPosts = [
     date: '2024-04-26',
     readTime: '8 min',
     category: 'Impôts',
+    image: '/images/blog/triple-imposition.jpg',
     excerpt: "Pierre, un entrepreneur de 60 ans, détient une compagnie de gestion d'une valeur d'un million de dollars. Sans stratégie adéquate, son décès entraînerait une triple imposition dévastatrice. Découvrez les scénarios et les solutions.",
     hasVideo: true,
     content: [
@@ -227,6 +240,7 @@ export const blogPosts = [
     date: '2024-03-27',
     readTime: '3 min',
     category: 'Conseils',
+    image: '/images/blog/avantages-independant.jpg',
     excerpt: "Pourquoi choisir un conseiller financier indépendant plutôt qu'un conseiller en succursale bancaire? L'indépendance offre des avantages concrets en matière d'objectivité, de choix de produits et de service personnalisé.",
     hasVideo: false,
     content: [
@@ -245,6 +259,7 @@ export const blogPosts = [
     date: '2024-03-13',
     readTime: '3 min',
     category: 'Assurances',
+    image: '/images/blog/conseiller-dentiste.jpg',
     excerpt: "Comme dentiste propriétaire, vous êtes exposé à des risques financiers importants. Nous explorons les risques de maladie et de décès, et les solutions d'assurance pour protéger votre clinique.",
     hasVideo: false,
     content: [
@@ -260,6 +275,7 @@ export const blogPosts = [
     date: '2024-03-11',
     readTime: '4 min',
     category: 'Assurances',
+    image: '/images/blog/assurance-besoin.jpg',
     excerpt: "L'assurance existe depuis des siècles et constitue la pierre angulaire de tout plan financier solide. Découvrez quand et pourquoi vous avez besoin d'une assurance à chaque étape de votre vie.",
     hasVideo: false,
     content: [
@@ -276,6 +292,7 @@ export const blogPosts = [
     date: '2023-12-05',
     readTime: '4 min',
     category: 'Conseils',
+    image: '/images/blog/conseiller-dentiste.jpg',
     excerpt: "Le choix d'un conseiller financier peut avoir un impact significatif sur votre stabilité financière à long terme. Voici 10 conseils pour choisir le bon conseiller adapté aux besoins spécifiques des dentistes.",
     hasVideo: false,
     content: [

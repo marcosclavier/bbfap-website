@@ -113,8 +113,24 @@ export default function BlogPostPage() {
         </div>
       </section>
 
+      {/* Featured image */}
+      {post.image && (
+        <div className="bg-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-12 relative z-20">
+            <div className="rounded-3xl overflow-hidden shadow-2xl border border-gray-100 aspect-video bg-gray-100">
+              <img
+                src={post.image}
+                alt={post.title}
+                className="w-full h-full object-cover"
+                loading="eager"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Article body */}
-      <section ref={contentRef} className="py-20 bg-white" aria-label="Contenu de l'article">
+      <section ref={contentRef} className={`${post.image ? 'pt-16' : 'pt-20'} pb-20 bg-white`} aria-label="Contenu de l'article">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className={`fade-in ${contentInView ? 'visible' : ''}`}>
             <p className="text-xl text-gray-700 leading-relaxed mb-10 font-medium border-l-4 border-amber-400 pl-6 italic">
