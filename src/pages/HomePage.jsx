@@ -39,7 +39,7 @@ export default function HomePage() {
       >
         <div className="absolute inset-0">
           <img
-            src="/images/team/frederic-arms-crossed.webp"
+            src="/images/team/team-white.webp"
             alt=""
             className="w-full h-full object-cover object-top"
             loading="eager"
@@ -335,8 +335,8 @@ export default function HomePage() {
             <div className={`relative fade-in ${aboutInView ? 'visible' : ''}`}>
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/team/team-white.webp"
-                  alt="Annie Bélanger et Frédéric Babeux — BBFAP"
+                  src="/images/team/team-dark.webp"
+                  alt="Annie Bélanger et Frédéric Babeux — Bélanger Brosseau"
                   className="w-full h-[500px] object-cover object-top"
                   loading="lazy"
                 />
