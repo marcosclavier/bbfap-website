@@ -34,7 +34,8 @@ export default function ServicesPage() {
       <section className="relative pt-32 pb-20 overflow-hidden" aria-labelledby="services-hero-heading">
         <div className="absolute inset-0">
           <img src="/images/team/frederic-headshot.webp" alt="" className="w-full h-full object-cover object-top" loading="eager" />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0f2448]/88 via-[#1B3A6B]/82 to-[#0f2448]/88" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0f2448]/95 via-[#1B3A6B]/85 to-[#0d1f3c]/95" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0d1f3c] via-[#0d1f3c]/40 to-transparent" />
         </div>
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
