@@ -65,7 +65,7 @@ export default function BlogPostPage() {
       {/* Hero */}
       <section className="relative pt-32 pb-20 overflow-hidden" aria-labelledby="post-hero-heading">
         <div className="absolute inset-0">
-          <img src="/images/team/frederic-window.webp" alt="" className="w-full h-full object-cover object-center" loading="eager" />
+          <img src="/images/team/frederic-window.webp" alt="" className="w-full h-full object-cover object-top" loading="eager" />
           <div className="absolute inset-0 bg-gradient-to-br from-[#0f2448]/92 via-[#1B3A6B]/88 to-[#0f2448]/92" />
         </div>
         <div className="absolute inset-0 opacity-5" style={{

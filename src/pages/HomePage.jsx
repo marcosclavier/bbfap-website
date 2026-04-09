@@ -41,7 +41,7 @@ export default function HomePage() {
           <img
             src="/images/team/frederic-arms-crossed.webp"
             alt=""
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-top"
             loading="eager"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-[#0f2448]/85 via-[#1B3A6B]/75 to-[#0f2448]/80" />
