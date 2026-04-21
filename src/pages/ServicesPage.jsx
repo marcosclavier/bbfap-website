@@ -34,8 +34,8 @@ export default function ServicesPage() {
       <section className="relative pt-32 pb-20 overflow-hidden" aria-labelledby="services-hero-heading">
         <div className="absolute inset-0">
           <img src="/images/team/frederic-headshot.webp" alt="" className="w-full h-full object-cover object-top" loading="eager" />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0f2448]/95 via-[#1B3A6B]/85 to-[#0d1f3c]/95" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0d1f3c] via-[#0d1f3c]/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0f2448]/75 via-[#1B3A6B]/55 to-[#0d1f3c]/75" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0d1f3c]/65 via-[#0d1f3c]/15 to-transparent" />
         </div>
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
@@ -139,7 +139,7 @@ export default function ServicesPage() {
             <div className={`fade-in ${fiscaliteInView ? 'visible' : ''}`}>
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/original/general-1.webp"
+                  src="/images/generated/service-fiscalite.webp"
                   alt="Services de fiscalité — BBFAP"
                   className="w-full h-[400px] object-cover"
                   loading="lazy"
@@ -203,7 +203,7 @@ export default function ServicesPage() {
             <div className={`order-1 lg:order-2 fade-in ${assurancesInView ? 'visible' : ''}`}>
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/original/general-2.webp"
+                  src="/images/generated/service-assurances.webp"
                   alt="Services d'assurances — BBFAP"
                   className="w-full h-[400px] object-cover"
                   loading="lazy"
@@ -225,7 +225,7 @@ export default function ServicesPage() {
             <div className={`fade-in ${placementsInView ? 'visible' : ''}`}>
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/original/general-3.webp"
+                  src="/images/generated/service-placements.webp"
                   alt="Services de placements — BBFAP"
                   className="w-full h-[400px] object-cover"
                   loading="lazy"
@@ -314,6 +314,19 @@ export default function ServicesPage() {
                   <span className="text-gray-700 font-medium">{item}</span>
                 </li>
               ))}
+              <li className="sm:col-span-2">
+                <Link
+                  to="/contact"
+                  className="group flex items-center justify-between gap-3 p-3 bg-amber-50 rounded-xl border border-amber-200 hover:bg-amber-100 hover:border-amber-300 transition-colors"
+                >
+                  <span className="flex items-start gap-3">
+                    <ArrowRight className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+                    <span className="text-gray-800 font-medium">
+                      Et bien d'autres&nbsp;— contactez-nous pour en savoir plus
+                    </span>
+                  </span>
+                </Link>
+              </li>
             </ul>
             <p className="text-gray-600 text-lg leading-relaxed">
               Nous comprenons les enjeux liés à la réalité corporative et aux décisions financières complexes.
