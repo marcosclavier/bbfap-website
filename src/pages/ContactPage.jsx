@@ -213,9 +213,25 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Right: Trust signals */}
+            {/* Right: Team photo + Trust signals */}
             <div className={`fade-in ${contentInView ? 'visible' : ''}`} style={{ transitionDelay: '150ms' }}>
-              <div className="bg-gray-50 border border-gray-200 rounded-3xl p-8 space-y-6 lg:sticky lg:top-28">
+              <div className="lg:sticky lg:top-28 space-y-6">
+                <figure className="rounded-3xl overflow-hidden shadow-lg border border-gray-200">
+                  <img
+                    src="/images/original/team.webp"
+                    alt="Annie Bélanger et Frédéric Babeux, conseillers chez BBFAP"
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                    width="940"
+                    height="788"
+                  />
+                  <figcaption className="bg-white px-6 py-4 text-center">
+                    <p className="text-gray-900 font-semibold">Annie Bélanger &amp; Frédéric Babeux</p>
+                    <p className="text-gray-600 text-sm">Vos conseillers chez BBFAP</p>
+                  </figcaption>
+                </figure>
+
+                <div className="bg-gray-50 border border-gray-200 rounded-3xl p-8 space-y-6">
                 <div className="flex gap-4 pb-6 border-b border-gray-200">
                   <div className="w-10 h-10 bg-blue-100 border border-blue-200 rounded-xl flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-5 h-5 text-blue-600" />
@@ -263,6 +279,7 @@ export default function ContactPage() {
                     </div>
                   </div>
                 ))}
+                </div>
               </div>
             </div>
           </div>

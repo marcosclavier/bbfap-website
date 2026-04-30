@@ -50,6 +50,9 @@ relevant imagery, and thoughtful layout.
 - You may reuse an image in multiple sections if needed.
 - **Do NOT use external image URLs** (Unsplash, Pexels, stock photo CDNs, etc.)
   External URLs break when services change. Only use local images from `public/`.
+  - **Exception:** `cdn.sanity.io` is allowed for CMS-managed images. The CMS
+    (Sanity, in `studio/`) is the project's own asset store; the rule above
+    targets stock photo CDNs.
 - For sections without a matching image in either pool, use CSS gradients, SVG icons,
   or decorative backgrounds instead of external image URLs.
 - Every major section should have a relevant image or visual element.

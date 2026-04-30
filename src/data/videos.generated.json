@@ -1,0 +1,92 @@
+[
+  {
+    "id": "5m8L764gBFgjqmzrpinHzD",
+    "title": "Le CELI, le plus beau cadeau pour vos héritiers?",
+    "youtubeUrl": "https://www.youtube.com/watch?v=ZZQXa3f_Jmk",
+    "duration": "4:32",
+    "description": "Pourquoi le CELI pourrait être le plus beau cadeau à laisser à vos héritiers.",
+    "thumbnailUrl": "https://cdn.sanity.io/images/fg7rctdm/production/d4c9e70109692ff5212e59368d19fdff8a953a92-1344x768.png?w=960&q=80&auto=format",
+    "order": 0,
+    "featuredOnHome": true
+  },
+  {
+    "id": "fR70tclSacz5if3UuAl23y",
+    "title": "Tout investir au Canada — une bonne idée?",
+    "youtubeUrl": "https://www.youtube.com/watch?v=HhLWwRFawys",
+    "duration": "3:31",
+    "description": "Devriez-vous investir 100% de vos actifs au Canada? Notre analyse.",
+    "thumbnailUrl": "https://cdn.sanity.io/images/fg7rctdm/production/c5e9ebf51730589cae6d4583bb0cd34d015e59c9-1344x768.png?w=960&q=80&auto=format",
+    "order": 1,
+    "featuredOnHome": true
+  },
+  {
+    "id": "nqTCoNDF4PmfXBXjTQ8vaw",
+    "title": "Attention au risque de concentration!",
+    "youtubeUrl": "https://www.youtube.com/watch?v=-dB9Z90bJhA",
+    "duration": "4:53",
+    "description": "Le risque de concentration et pourquoi il ne faut pas le négliger.",
+    "thumbnailUrl": "https://cdn.sanity.io/images/fg7rctdm/production/ce3141428d44633e89e38b32f13d6e59c64edc5a-1344x768.png?w=960&q=80&auto=format",
+    "order": 2,
+    "featuredOnHome": true
+  },
+  {
+    "id": "fR70tclSacz5if3UuAl2mF",
+    "title": "Investir par soi-même vs avec un conseiller",
+    "youtubeUrl": "https://www.youtube.com/watch?v=s55jlOKr3fU",
+    "duration": "11:48",
+    "description": "Gérer vos placements* seul ou avec un conseiller — quelle est la meilleure option?",
+    "thumbnailUrl": "https://cdn.sanity.io/images/fg7rctdm/production/ca9639486b7bf671530289a9d9dcb752c3242d5a-1344x768.png?w=960&q=80&auto=format",
+    "order": 3,
+    "featuredOnHome": true
+  },
+  {
+    "id": "5m8L764gBFgjqmzrpinJwp",
+    "title": "Votre tolérance au risque tue vos chances d’une retraite confortable",
+    "youtubeUrl": "https://www.youtube.com/watch?v=C6pI3kCtthk",
+    "duration": "6:49",
+    "description": "Comment votre aversion au risque peut nuire à votre retraite.",
+    "thumbnailUrl": "https://cdn.sanity.io/images/fg7rctdm/production/86a3d7138c1ab8056e86ad126a2ecdec375954b5-1344x768.png?w=960&q=80&auto=format",
+    "order": 4,
+    "featuredOnHome": true
+  },
+  {
+    "id": "fR70tclSacz5if3UuAl3jH",
+    "title": "Assurance vie temporaire vs permanente — Laquelle choisir?",
+    "youtubeUrl": "https://www.youtube.com/watch?v=ILNtQOFNP68",
+    "duration": "12:49",
+    "description": "La différence entre assurance vie temporaire et permanente, et quand choisir chacune.",
+    "thumbnailUrl": "https://cdn.sanity.io/images/fg7rctdm/production/933215c6e216f0f0b0f91f2e58e5ed7990c61322-1344x768.png?w=960&q=80&auto=format",
+    "order": 5,
+    "featuredOnHome": true
+  },
+  {
+    "id": "5m8L764gBFgjqmzrpinKfG",
+    "title": "Convention d’actionnaires : essentielle pour votre entreprise",
+    "youtubeUrl": "https://www.youtube.com/watch?v=uNpKE8h4iBE",
+    "duration": "5:51",
+    "description": "Pourquoi une convention d’actionnaires est indispensable pour protéger votre entreprise.",
+    "thumbnailUrl": "https://cdn.sanity.io/images/fg7rctdm/production/25464482c2b1e30bb8911706d4fcac13fee3b28b-1344x768.png?w=960&q=80&auto=format",
+    "order": 6,
+    "featuredOnHome": true
+  },
+  {
+    "id": "5m8L764gBFgjqmzrpinKxy",
+    "title": "Placer de l’argent dans une compagnie de gestion? Attention à cette erreur fatale",
+    "youtubeUrl": "https://www.youtube.com/watch?v=51gsK1q-uGg",
+    "duration": "5:43",
+    "description": "L’erreur fatale à éviter pour ne pas perdre la déduction pour petite entreprise.",
+    "thumbnailUrl": "https://cdn.sanity.io/images/fg7rctdm/production/83808f2204dea9278f4bfba897a3517881d155d7-1280x720.webp?w=960&q=80&auto=format",
+    "order": 7,
+    "featuredOnHome": true
+  },
+  {
+    "id": "5m8L764gBFgjqmzrpinLNh",
+    "title": "Gel Successoral : C’est quoi?",
+    "youtubeUrl": "https://www.youtube.com/watch?v=gmx84xFkFMM",
+    "duration": "8:21",
+    "description": "Le gel successoral expliqué par Annie Bélanger, M.Fisc — outil puissant de planification fiscale.",
+    "thumbnailUrl": "https://cdn.sanity.io/images/fg7rctdm/production/42816628ea1be1bdc82f69ae04bfe5af81525302-1344x768.png?w=960&q=80&auto=format",
+    "order": 8,
+    "featuredOnHome": true
+  }
+]

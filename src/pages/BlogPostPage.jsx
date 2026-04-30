@@ -2,7 +2,8 @@ import { useRef } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Calendar, Clock, ArrowLeft, ArrowRight } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
-import { blogPosts } from '../data/blogPosts';
+import blogPosts from '../data/blog.generated.json';
+import PortableTextBody from '../components/PortableTextBody';
 
 const categoryColors = {
   Placements: 'bg-blue-100 text-blue-700',
@@ -14,6 +15,7 @@ const categoryColors = {
 };
 
 function formatDate(iso) {
+  if (!iso) return '';
   try {
     return new Date(iso).toLocaleDateString('fr-CA', {
       year: 'numeric',
@@ -101,7 +103,7 @@ export default function BlogPostPage() {
             <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-white/70 text-sm">
               <span className="flex items-center gap-2">
                 <Calendar className="w-4 h-4" />
-                {formatDate(post.date)}
+                {formatDate(post.publishedAt)}
               </span>
               <span className="flex items-center gap-2">
                 <Clock className="w-4 h-4" />
@@ -114,13 +116,13 @@ export default function BlogPostPage() {
       </section>
 
       {/* Featured image */}
-      {post.image && (
+      {post.heroImageUrl && (
         <div className="bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-12 relative z-20">
             <div className="rounded-3xl overflow-hidden shadow-2xl border border-gray-100 aspect-video bg-gray-100">
               <img
-                src={post.image}
-                alt={post.title}
+                src={post.heroImageUrl}
+                alt={post.heroImageAlt || post.title}
                 className="w-full h-full object-cover"
                 loading="eager"
               />
@@ -130,19 +132,15 @@ export default function BlogPostPage() {
       )}
 
       {/* Article body */}
-      <section ref={contentRef} className={`${post.image ? 'pt-16' : 'pt-20'} pb-20 bg-white`} aria-label="Contenu de l'article">
+      <section ref={contentRef} className={`${post.heroImageUrl ? 'pt-16' : 'pt-20'} pb-20 bg-white`} aria-label="Contenu de l'article">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className={`fade-in ${contentInView ? 'visible' : ''}`}>
             <p className="text-xl text-gray-700 leading-relaxed mb-10 font-medium border-l-4 border-amber-400 pl-6 italic">
               {post.excerpt}
             </p>
 
-            <div className="prose-content space-y-6">
-              {post.content.map((paragraph, i) => (
-                <p key={i} className="text-gray-700 text-lg leading-relaxed">
-                  {paragraph}
-                </p>
-              ))}
+            <div className="prose-content">
+              <PortableTextBody value={post.body} />
             </div>
 
             {/* CTA */}
