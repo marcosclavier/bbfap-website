@@ -1,6 +1,9 @@
 import { useRef, useState } from 'react';
 import { Send, Facebook, Linkedin, Youtube, MapPin } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
+import { useRecaptcha } from '../hooks/useRecaptcha';
+
+const CAPTCHA_SITE_KEY = import.meta.env.VITE_CAPTCHA_SITE_KEY;
 
 export default function ContactPage() {
   const heroRef = useRef(null);
@@ -10,15 +13,40 @@ export default function ContactPage() {
   const contentInView = useInView(contentRef, { threshold: 0.2 });
 
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState('');
 
-  function handleSubmit(e) {
+  const executeRecaptcha = useRecaptcha(CAPTCHA_SITE_KEY);
+
+  async function handleSubmit(e) {
     e.preventDefault();
+    setError('');
     const form = e.target;
-    const data = new FormData(form);
-    // POST to Formspree / Netlify Forms / custom endpoint
-    // For now, just show a success message
-    setSubmitted(true);
-    form.reset();
+    const data = Object.fromEntries(new FormData(form).entries());
+
+    // Without a configured site key (e.g. local dev), keep the prior behaviour.
+    if (!CAPTCHA_SITE_KEY) {
+      setSubmitted(true);
+      form.reset();
+      return;
+    }
+
+    setSubmitting(true);
+    try {
+      const captchaToken = await executeRecaptcha('contact');
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...data, captchaToken }),
+      });
+      if (!res.ok) throw new Error('submit_failed');
+      setSubmitted(true);
+      form.reset();
+    } catch {
+      setError("La vérification de sécurité a échoué. Veuillez réessayer dans un instant.");
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   return (
@@ -32,7 +60,7 @@ export default function ContactPage() {
             className="w-full h-full object-cover"
             loading="eager"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0f2448]/95 via-[#1B3A6B]/90 to-[#0d1f3c]/95" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0f2448]/95 via-[#16508C]/90 to-[#0d1f3c]/95" />
         </div>
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
@@ -154,13 +182,44 @@ export default function ContactPage() {
                     </select>
                   </div>
 
+                  <fieldset>
+                    <legend className="block text-sm font-semibold text-gray-700 mb-1.5">
+                      À combien s'élèvent vos actifs investissables? <span className="text-red-500" aria-hidden="true">*</span>
+                      <span className="block text-xs font-normal text-gray-500 mt-1 leading-relaxed">
+                        REER, CELI, CRI, FERR, FRV, comptes non-enregistrés, etc.
+                      </span>
+                    </legend>
+                    <div className="space-y-2 mt-3">
+                      {[
+                        'Moins de 250 000$',
+                        '250 000$ à 500 000$',
+                        '500 000$ à 1 000 000$',
+                        '1 000 000$ et plus',
+                      ].map((opt) => (
+                        <label
+                          key={opt}
+                          className="flex items-center gap-3 px-4 py-3 border border-gray-300 rounded-xl cursor-pointer hover:border-gray-400 has-[:checked]:border-[#16508C] has-[:checked]:bg-[#16508C]/5 has-[:checked]:ring-2 has-[:checked]:ring-[#16508C]/20 transition"
+                        >
+                          <input
+                            type="radio"
+                            name="actifsInvestissables"
+                            value={opt}
+                            required
+                            className="w-4 h-4 accent-[#16508C] border-gray-300"
+                          />
+                          <span className="text-gray-900 text-sm font-medium">{opt}</span>
+                        </label>
+                      ))}
+                    </div>
+                  </fieldset>
+
                   <div>
-                    <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-1.5">
-                      Message
+                    <label htmlFor="discussion" className="block text-sm font-semibold text-gray-700 mb-1.5">
+                      De quoi aimeriez-vous discuter avec nous? <span className="text-red-500" aria-hidden="true">*</span>
                     </label>
                     <textarea
-                      id="message"
-                      name="message"
+                      id="discussion"
+                      name="discussion"
                       rows={4}
                       required
                       className="w-full px-4 py-3 border border-gray-300 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-shadow resize-none"
@@ -168,13 +227,29 @@ export default function ContactPage() {
                     />
                   </div>
 
+                  {error && (
+                    <p role="alert" className="text-sm text-red-600 bg-red-50 border border-red-200 rounded-xl px-4 py-3">
+                      {error}
+                    </p>
+                  )}
+
                   <button
                     type="submit"
-                    className="inline-flex items-center gap-3 px-8 py-4 bg-amber-600 hover:bg-amber-500 text-white font-bold text-lg rounded-xl transition-all duration-200 shadow-xl hover:shadow-amber-500/30 hover:-translate-y-0.5 w-full sm:w-auto justify-center"
+                    disabled={submitting}
+                    className="inline-flex items-center gap-3 px-8 py-4 bg-amber-600 hover:bg-amber-500 text-white font-bold text-lg rounded-xl transition-all duration-200 shadow-xl hover:shadow-amber-500/30 hover:-translate-y-0.5 w-full sm:w-auto justify-center disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:translate-y-0"
                   >
                     <Send className="w-5 h-5" />
-                    Envoyer le message
+                    {submitting ? 'Envoi en cours…' : 'Envoyer le message'}
                   </button>
+
+                  {/* reCAPTCHA v3 disclosure (required by Google when the badge is shown) */}
+                  <p className="text-xs text-gray-400 leading-relaxed">
+                    Ce site est protégé par reCAPTCHA. La{' '}
+                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-600">politique de confidentialité</a>{' '}
+                    et les{' '}
+                    <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-600">conditions d'utilisation</a>{' '}
+                    de Google s'appliquent.
+                  </p>
                 </form>
               )}
 

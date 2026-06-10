@@ -4,20 +4,16 @@ const youtubeUrlPattern = /^https?:\/\/(www\.)?(youtube\.com\/watch\?v=|youtu\.b
 
 export default defineType({
   name: 'video',
-  title: 'Vidéo YouTube',
+  title: 'Vignette personnalisée YouTube',
   type: 'document',
+  description:
+    'La liste des vidéos est tirée automatiquement de la chaîne YouTube. Créez un document ici uniquement si vous voulez remplacer la vignette ou le titre d’une vidéo en particulier.',
   fields: [
-    defineField({
-      name: 'title',
-      title: 'Titre',
-      type: 'string',
-      validation: (rule) => rule.required().min(3).max(200),
-    }),
     defineField({
       name: 'youtubeUrl',
       title: 'URL YouTube',
       type: 'url',
-      description: 'Collez l’URL complète de la vidéo (ex. https://www.youtube.com/watch?v=…).',
+      description: 'Collez l’URL complète de la vidéo (ex. https://www.youtube.com/watch?v=…). Sert de clé pour relier ce document à la vidéo sur YouTube.',
       validation: (rule) =>
         rule
           .required()
@@ -25,27 +21,15 @@ export default defineType({
           .custom((value) =>
             !value || youtubeUrlPattern.test(value)
               ? true
-              : 'L’URL doit pointer vers une vidéo YouTube (watch, youtu.be ou shorts).'
+              : 'L’URL doit pointer vers une vidéo YouTube (watch, youtu.be ou shorts).',
           ),
     }),
     defineField({
-      name: 'duration',
-      title: 'Durée',
-      type: 'string',
-      description: 'Format mm:ss (ex. "4:32").',
-    }),
-    defineField({
-      name: 'description',
-      title: 'Description',
-      type: 'text',
-      rows: 2,
-    }),
-    defineField({
       name: 'customThumbnail',
-      title: 'Vignette personnalisée (optionnel)',
+      title: 'Vignette personnalisée',
       type: 'image',
       description:
-        'Si laissé vide, la vignette automatique de YouTube est utilisée.',
+        'Remplace la vignette automatique de YouTube. Laissez vide pour utiliser celle de YouTube.',
       options: {hotspot: true},
       fields: [
         defineField({
@@ -56,27 +40,22 @@ export default defineType({
       ],
     }),
     defineField({
-      name: 'order',
-      title: 'Ordre d’affichage',
-      type: 'number',
-      description: 'Plus le nombre est petit, plus la vidéo apparaît tôt dans la grille.',
-      initialValue: 0,
+      name: 'title',
+      title: 'Titre (optionnel)',
+      type: 'string',
+      description:
+        'Laissez vide pour utiliser le titre YouTube. Remplissez seulement pour le remplacer sur le site.',
+      validation: (rule) => rule.max(200),
     }),
-    defineField({
-      name: 'featuredOnHome',
-      title: 'Afficher sur la page d’accueil',
-      type: 'boolean',
-      initialValue: true,
-    }),
-  ],
-  orderings: [
-    {
-      title: 'Ordre manuel',
-      name: 'orderAsc',
-      by: [{field: 'order', direction: 'asc'}],
-    },
   ],
   preview: {
-    select: {title: 'title', subtitle: 'duration', media: 'customThumbnail'},
+    select: {title: 'title', subtitle: 'youtubeUrl', media: 'customThumbnail'},
+    prepare({title, subtitle, media}) {
+      return {
+        title: title || subtitle || 'Vignette personnalisée',
+        subtitle: title ? subtitle : undefined,
+        media,
+      }
+    },
   },
 })

@@ -1,14 +1,10 @@
 import { useRef } from 'react';
 import { Play, Youtube } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
-import allVideos from '../data/videos.generated.json';
+import { useVideos } from '../hooks/useVideos';
 import { youtubeThumbnail } from '../lib/youtube';
 
 const CHANNEL_URL = 'https://www.youtube.com/@BelangerBrosseau?sub_confirmation=1';
-
-const videos = allVideos
-  .filter((v) => v.featuredOnHome !== false)
-  .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
 
 function thumbFor(video) {
   if (video.thumbnailUrl) return video.thumbnailUrl;
@@ -16,6 +12,7 @@ function thumbFor(video) {
 }
 
 export default function Videos() {
+  const videos = useVideos();
   const ref = useRef(null);
   const inView = useInView(ref, { threshold: 0.1 });
 
@@ -79,12 +76,6 @@ export default function Videos() {
                       <Play className="w-5 h-5 text-white ml-0.5" fill="white" />
                     </div>
                   </div>
-                  {/* Duration badge */}
-                  {v.duration && (
-                    <div className="absolute bottom-2 right-2 bg-black/70 text-white text-xs font-mono px-2 py-0.5 rounded">
-                      {v.duration}
-                    </div>
-                  )}
                 </div>
 
                 {/* Info */}
@@ -92,9 +83,6 @@ export default function Videos() {
                   <h3 className="font-semibold text-gray-900 text-sm leading-snug mb-1.5 line-clamp-2 group-hover:text-blue-700 transition-colors">
                     {v.title}
                   </h3>
-                  {v.description && (
-                    <p className="text-gray-500 text-xs leading-relaxed line-clamp-2">{v.description}</p>
-                  )}
                 </div>
               </a>
             );

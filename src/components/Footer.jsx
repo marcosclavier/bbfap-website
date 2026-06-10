@@ -14,11 +14,16 @@ const navLinks = [
   { label: 'Contact', to: '/contact' },
 ];
 
+const regionLinks = [
+  { label: 'Conseiller financier — Rive-Sud', to: '/conseiller-financier-rive-sud' },
+  { label: 'Conseiller financier — Montréal', to: '/conseiller-financier-montreal' },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-[#0d1f3c] text-white" role="contentinfo">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">
             <img
@@ -80,6 +85,20 @@ export default function Footer() {
             <h3 className="text-white font-bold text-sm uppercase tracking-widest mb-4">Navigation</h3>
             <ul className="space-y-2">
               {navLinks.map((l) => (
+                <li key={l.to}>
+                  <Link to={l.to} className="text-blue-200 hover:text-white text-sm transition-colors">
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Régions desservies */}
+          <div>
+            <h3 className="text-white font-bold text-sm uppercase tracking-widest mb-4">Régions desservies</h3>
+            <ul className="space-y-2">
+              {regionLinks.map((l) => (
                 <li key={l.to}>
                   <Link to={l.to} className="text-blue-200 hover:text-white text-sm transition-colors">
                     {l.label}

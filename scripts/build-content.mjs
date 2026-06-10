@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 /**
  * Build-time content fetch.
- * - If VITE_SANITY_PROJECT_ID is configured, fetch posts/videos from Sanity.
- * - Otherwise, fall back to the legacy hardcoded blogPosts.js + canonical video list.
+ * - Blog posts: from Sanity if VITE_SANITY_PROJECT_ID is set, else legacy fallback.
+ * - Videos: YouTube channel RSS as source-of-truth, merged with optional Sanity overrides
+ *   (custom thumbnails / title overrides). On RSS failure, the previously written snapshot
+ *   is preserved so a transient network blip never blanks the site.
  * Output: src/data/blog.generated.json, src/data/videos.generated.json.
  */
 
@@ -10,112 +12,56 @@ import {readFile, writeFile, access} from 'node:fs/promises'
 import {fileURLToPath} from 'node:url'
 import {dirname, resolve} from 'node:path'
 
+import {
+  DEFAULT_CHANNEL_ID,
+  fetchSanityOverrides,
+  fetchYouTubeFeed,
+  mergeVideos,
+} from './lib/youtube.mjs'
+
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = resolve(__dirname, '..')
-
-const LEGACY_VIDEOS = [
-  {
-    title: 'Le CELI, le plus beau cadeau pour vos héritiers?',
-    duration: '4:32',
-    description: 'Pourquoi le CELI pourrait être le plus beau cadeau à laisser à vos héritiers.',
-    thumbnail: '/images/generated/thumb-1.png',
-    youtubeUrl: 'https://www.youtube.com/watch?v=ZZQXa3f_Jmk',
-  },
-  {
-    title: 'Tout investir au Canada — une bonne idée?',
-    duration: '3:31',
-    description: 'Devriez-vous investir 100% de vos actifs au Canada? Notre analyse.',
-    thumbnail: '/images/generated/thumb-2.png',
-    youtubeUrl: 'https://www.youtube.com/watch?v=HhLWwRFawys',
-  },
-  {
-    title: 'Attention au risque de concentration!',
-    duration: '4:53',
-    description: 'Le risque de concentration et pourquoi il ne faut pas le négliger.',
-    thumbnail: '/images/generated/thumb-3.png',
-    youtubeUrl: 'https://www.youtube.com/watch?v=-dB9Z90bJhA',
-  },
-  {
-    title: 'Investir par soi-même vs avec un conseiller',
-    duration: '11:48',
-    description: 'Gérer vos placements* seul ou avec un conseiller — quelle est la meilleure option?',
-    thumbnail: '/images/generated/thumb-4.png',
-    youtubeUrl: 'https://www.youtube.com/watch?v=s55jlOKr3fU',
-  },
-  {
-    title: 'Votre tolérance au risque tue vos chances d’une retraite confortable',
-    duration: '6:49',
-    description: 'Comment votre aversion au risque peut nuire à votre retraite.',
-    thumbnail: '/images/generated/thumb-5.png',
-    youtubeUrl: 'https://www.youtube.com/watch?v=C6pI3kCtthk',
-  },
-  {
-    title: 'Assurance vie temporaire vs permanente — Laquelle choisir?',
-    duration: '12:49',
-    description: 'La différence entre assurance vie temporaire et permanente, et quand choisir chacune.',
-    thumbnail: '/images/generated/thumb-6.png',
-    youtubeUrl: 'https://www.youtube.com/watch?v=ILNtQOFNP68',
-  },
-  {
-    title: 'Convention d’actionnaires : essentielle pour votre entreprise',
-    duration: '5:51',
-    description: 'Pourquoi une convention d’actionnaires est indispensable pour protéger votre entreprise.',
-    thumbnail: '/images/generated/thumb-7.png',
-    youtubeUrl: 'https://www.youtube.com/watch?v=uNpKE8h4iBE',
-  },
-  {
-    title: 'Placer de l’argent dans une compagnie de gestion? Attention à cette erreur fatale',
-    duration: '5:43',
-    description: 'L’erreur fatale à éviter pour ne pas perdre la déduction pour petite entreprise.',
-    thumbnail: '/images/original/general-8.webp',
-    youtubeUrl: 'https://www.youtube.com/watch?v=51gsK1q-uGg',
-  },
-  {
-    title: 'Gel Successoral : C’est quoi?',
-    duration: '8:21',
-    description: 'Le gel successoral expliqué par Annie Bélanger, M.Fisc — outil puissant de planification fiscale.',
-    thumbnail: '/images/generated/thumb-9.png',
-    youtubeUrl: 'https://www.youtube.com/watch?v=gmx84xFkFMM',
-  },
-]
 
 await loadDotEnv(resolve(ROOT, '.env'))
 
 const projectId = process.env.VITE_SANITY_PROJECT_ID
 const dataset = process.env.VITE_SANITY_DATASET || 'production'
+const channelId = process.env.YOUTUBE_CHANNEL_ID || DEFAULT_CHANNEL_ID
 
 const blogOut = resolve(ROOT, 'src/data/blog.generated.json')
 const videosOut = resolve(ROOT, 'src/data/videos.generated.json')
 
 const sanityConfigured = projectId && projectId !== 'REPLACE_WITH_PROJECT_ID'
 
+let sanityClient = null
+let imageBuilder = null
 if (sanityConfigured) {
-  console.log(`[build-content] Fetching from Sanity (project=${projectId}, dataset=${dataset})…`)
-  const {posts, videos} = await fetchFromSanity()
-  await writeFile(blogOut, JSON.stringify(posts, null, 2))
-  await writeFile(videosOut, JSON.stringify(videos, null, 2))
-  console.log(`[build-content] Wrote ${posts.length} posts and ${videos.length} videos.`)
-} else {
-  console.log('[build-content] VITE_SANITY_PROJECT_ID not set — using legacy fallback.')
-  const {posts, videos} = await buildFromLegacy()
-  await writeFile(blogOut, JSON.stringify(posts, null, 2))
-  await writeFile(videosOut, JSON.stringify(videos, null, 2))
-  console.log(`[build-content] Wrote ${posts.length} posts and ${videos.length} videos.`)
-}
-
-async function fetchFromSanity() {
   const {createClient} = await import('@sanity/client')
   const imageUrlBuilder = (await import('@sanity/image-url')).default
-  const client = createClient({
+  sanityClient = createClient({
     projectId,
     dataset,
     apiVersion: '2024-09-01',
     useCdn: true,
     perspective: 'published',
   })
-  const builder = imageUrlBuilder({projectId, dataset})
+  imageBuilder = imageUrlBuilder({projectId, dataset})
+}
 
-  const postsRaw = await client.fetch(
+const posts = await fetchBlogPosts()
+const videos = await fetchVideos()
+
+await writeFile(blogOut, JSON.stringify(posts, null, 2))
+await writeFile(videosOut, JSON.stringify(videos, null, 2))
+console.log(`[build-content] Wrote ${posts.length} posts and ${videos.length} videos.`)
+
+async function fetchBlogPosts() {
+  if (!sanityConfigured) {
+    console.log('[build-content] Sanity not configured — using legacy blog posts.')
+    return buildLegacyPosts()
+  }
+  console.log(`[build-content] Fetching blog posts from Sanity (project=${projectId}, dataset=${dataset})…`)
+  const postsRaw = await sanityClient.fetch(
     `*[_type == "blogPost"] | order(publishedAt desc) {
       _id,
       "slug": slug.current,
@@ -127,57 +73,54 @@ async function fetchFromSanity() {
       excerpt,
       hasVideo,
       body
-    }`
+    }`,
   )
-
-  const posts = postsRaw.map((p) => ({
+  return postsRaw.map((p) => ({
     id: p._id,
     slug: p.slug,
     title: p.title,
     publishedAt: p.publishedAt,
     readTime: p.readTime,
     category: p.category,
-    heroImageUrl: p.heroImage ? builder.image(p.heroImage).auto('format').width(1600).quality(80).url() : null,
+    heroImageUrl: p.heroImage
+      ? imageBuilder.image(p.heroImage).auto('format').width(1600).quality(80).url()
+      : null,
     heroImageAlt: p.heroImage?.alt || p.title,
     excerpt: p.excerpt,
     hasVideo: !!p.hasVideo,
     body: p.body || [],
   }))
-
-  const videosRaw = await client.fetch(
-    `*[_type == "video"] | order(order asc) {
-      _id,
-      title,
-      youtubeUrl,
-      duration,
-      description,
-      customThumbnail,
-      order,
-      featuredOnHome
-    }`
-  )
-
-  const videos = videosRaw.map((v) => ({
-    id: v._id,
-    title: v.title,
-    youtubeUrl: v.youtubeUrl || null,
-    duration: v.duration || '',
-    description: v.description || '',
-    thumbnailUrl: v.customThumbnail
-      ? builder.image(v.customThumbnail).auto('format').width(960).quality(80).url()
-      : null,
-    order: v.order ?? 0,
-    featuredOnHome: v.featuredOnHome !== false,
-  }))
-
-  return {posts, videos}
 }
 
-async function buildFromLegacy() {
-  const blogModule = await import(resolve(ROOT, 'src/data/blogPosts.js'))
-  const legacyPosts = blogModule.blogPosts
+async function fetchVideos() {
+  try {
+    console.log(`[build-content] Fetching YouTube feed (channel=${channelId})…`)
+    const feed = await fetchYouTubeFeed(channelId)
+    let overrides = new Map()
+    if (sanityConfigured) {
+      try {
+        overrides = await fetchSanityOverrides(sanityClient, imageBuilder)
+        console.log(`[build-content] Loaded ${overrides.size} Sanity video override(s).`)
+      } catch (err) {
+        console.warn('[build-content] Sanity override fetch failed; continuing with feed only:', err.message)
+      }
+    }
+    return mergeVideos(feed, overrides)
+  } catch (err) {
+    console.warn(`[build-content] YouTube fetch failed (${err.message}). Preserving previous snapshot.`)
+    try {
+      const prev = JSON.parse(await readFile(videosOut, 'utf8'))
+      if (Array.isArray(prev) && prev.length > 0) return prev
+    } catch {
+      // no previous snapshot; fall through to empty list
+    }
+    return []
+  }
+}
 
-  const posts = legacyPosts.map((p, i) => ({
+async function buildLegacyPosts() {
+  const blogModule = await import(resolve(ROOT, 'src/data/blogPosts.js'))
+  return blogModule.blogPosts.map((p) => ({
     id: `legacy-${p.slug}`,
     slug: p.slug,
     title: p.title,
@@ -190,19 +133,6 @@ async function buildFromLegacy() {
     hasVideo: !!p.hasVideo,
     body: p.content,
   }))
-
-  const videos = LEGACY_VIDEOS.map((v, i) => ({
-    id: `legacy-video-${i + 1}`,
-    title: v.title,
-    youtubeUrl: v.youtubeUrl || null,
-    duration: v.duration,
-    description: v.description,
-    thumbnailUrl: v.thumbnail,
-    order: i,
-    featuredOnHome: true,
-  }))
-
-  return {posts, videos}
 }
 
 async function loadDotEnv(path) {

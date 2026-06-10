@@ -2,15 +2,13 @@ import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Play, Youtube, Clock, ArrowRight } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
+import { useVideos } from '../hooks/useVideos';
 import blogPosts from '../data/blog.generated.json';
-import allVideos from '../data/videos.generated.json';
 import { youtubeThumbnail } from '../lib/youtube';
 
 const CHANNEL_URL = 'https://www.youtube.com/@BelangerBrosseau?sub_confirmation=1';
 
 const blogCategories = ['Tous', 'Placements', 'Fiscalité', 'Impôts', 'Assurances', 'Conseils', 'Planification Successorale'];
-
-const videos = [...allVideos].sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
 
 const categoryColors = {
   Placements: 'bg-blue-100 text-blue-700',
@@ -37,6 +35,7 @@ function thumbFor(video) {
 
 export default function BlogPage() {
   const [activeCategory, setActiveCategory] = useState('Tous');
+  const videos = useVideos();
 
   const heroRef = useRef(null);
   const heroInView = useInView(heroRef, { threshold: 0.2 });
@@ -58,7 +57,7 @@ export default function BlogPage() {
       <section className="relative pt-32 pb-20 overflow-hidden" aria-labelledby="blog-hero-heading">
         <div className="absolute inset-0">
           <img src="/images/generated/section-portfolio.webp" alt="" className="w-full h-full object-cover object-center" loading="eager" />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0f2448]/90 via-[#1B3A6B]/85 to-[#0f2448]/90" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0f2448]/90 via-[#16508C]/85 to-[#0f2448]/90" />
         </div>
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
@@ -223,19 +222,11 @@ export default function BlogPage() {
                         <Play className="w-5 h-5 text-white ml-0.5" fill="white" />
                       </div>
                     </div>
-                    {v.duration && (
-                      <div className="absolute bottom-2 right-2 bg-black/70 text-white text-xs font-mono px-2 py-0.5 rounded">
-                        {v.duration}
-                      </div>
-                    )}
                   </div>
                   <div className="p-4">
                     <h3 className="font-semibold text-gray-900 text-sm leading-snug mb-1.5 line-clamp-2 group-hover:text-blue-700 transition-colors">
                       {v.title}
                     </h3>
-                    {v.description && (
-                      <p className="text-gray-500 text-xs leading-relaxed line-clamp-2">{v.description}</p>
-                    )}
                   </div>
                 </a>
               );

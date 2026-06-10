@@ -44,7 +44,7 @@ export default function HomePage() {
             className="w-full h-full object-cover object-top"
             loading="eager"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0f2448]/85 via-[#1B3A6B]/75 to-[#0f2448]/80" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0f2448]/85 via-[#16508C]/75 to-[#0f2448]/80" />
         </div>
 
         <div className="absolute inset-0 opacity-5" style={{
@@ -340,7 +340,7 @@ export default function HomePage() {
                   className="w-full h-[500px] object-cover object-top"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1B3A6B]/60 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#16508C]/60 to-transparent" />
               </div>
               <div className="absolute -top-6 -right-6 w-24 h-24 bg-amber-400 rounded-2xl flex flex-col items-center justify-center shadow-xl rotate-3 hidden lg:flex">
                 <span className="text-white font-bold text-2xl leading-none">30+</span>
@@ -385,7 +385,7 @@ export default function HomePage() {
             loading="lazy"
             aria-hidden="true"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0f2448]/95 via-[#1B3A6B]/90 to-[#0d1f3c]/95" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0f2448]/95 via-[#16508C]/90 to-[#0d1f3c]/95" />
         </div>
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,

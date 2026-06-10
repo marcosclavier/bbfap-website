@@ -8,6 +8,8 @@ import ServicesPage from './pages/ServicesPage';
 import BlogPage from './pages/BlogPage';
 import BlogPostPage from './pages/BlogPostPage';
 import ContactPage from './pages/ContactPage';
+import ConseillerFinancierRiveSud from './pages/ConseillerFinancierRiveSud';
+import ConseillerFinancierMontreal from './pages/ConseillerFinancierMontreal';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -30,6 +32,8 @@ export default function App() {
           <Route path="/blogue" element={<BlogPage />} />
           <Route path="/blogue/:slug" element={<BlogPostPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/conseiller-financier-rive-sud" element={<ConseillerFinancierRiveSud />} />
+          <Route path="/conseiller-financier-montreal" element={<ConseillerFinancierMontreal />} />
         </Routes>
       </main>
       <Footer />

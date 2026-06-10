@@ -32,7 +32,7 @@ export default function Stats() {
     <section
       id="impact"
       ref={ref}
-      className="py-20 bg-[#1B3A6B]"
+      className="py-20 bg-[#16508C]"
       aria-labelledby="impact-heading"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

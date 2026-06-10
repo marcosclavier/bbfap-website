@@ -67,7 +67,7 @@ export default function Testimonials() {
                 className="w-full rounded-xl mb-4"
                 loading="lazy"
               />
-              <div className="mt-4 p-4 bg-[#1B3A6B] rounded-xl">
+              <div className="mt-4 p-4 bg-[#16508C] rounded-xl">
                 <p className="text-white/80 text-sm text-center">
                   Des clients satisfaits depuis plus de 30 ans dans la grande région de Montréal
                 </p>
@@ -76,11 +76,11 @@ export default function Testimonials() {
               {/* Stats */}
               <div className="mt-4 grid grid-cols-2 gap-3">
                 <div className="bg-white rounded-xl p-4 text-center border border-gray-100">
-                  <div className="text-2xl font-bold text-[#1B3A6B]">130+</div>
+                  <div className="text-2xl font-bold text-[#16508C]">130+</div>
                   <div className="text-xs text-gray-500 mt-0.5">Entrepreneurs assurés</div>
                 </div>
                 <div className="bg-white rounded-xl p-4 text-center border border-gray-100">
-                  <div className="text-2xl font-bold text-[#1B3A6B]">22</div>
+                  <div className="text-2xl font-bold text-[#16508C]">22</div>
                   <div className="text-xs text-gray-500 mt-0.5">Assureurs partenaires</div>
                 </div>
               </div>

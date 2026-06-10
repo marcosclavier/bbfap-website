@@ -46,7 +46,7 @@ export default function About() {
                 className="w-full h-[500px] object-cover"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1B3A6B]/60 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#16508C]/60 to-transparent" />
               {/* Floating quote card */}
               <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur rounded-2xl p-5 shadow-lg">
                 <p className="text-gray-800 font-medium italic text-sm leading-relaxed">
@@ -86,7 +86,7 @@ export default function About() {
                 >
                   {/* Timeline indicator */}
                   <div className="flex flex-col items-center flex-shrink-0">
-                    <div className="w-10 h-10 rounded-full bg-[#1B3A6B] flex items-center justify-center shadow-md">
+                    <div className="w-10 h-10 rounded-full bg-[#16508C] flex items-center justify-center shadow-md">
                       <span className="text-white text-xs font-bold">{i + 1}</span>
                     </div>
                     {i < milestones.length - 1 && (

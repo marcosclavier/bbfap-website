@@ -25,7 +25,7 @@ export default function Hero() {
           loading="eager"
         />
         {/* Deep gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0f2448]/90 via-[#1B3A6B]/80 to-[#0f2448]/85" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0f2448]/90 via-[#16508C]/80 to-[#0f2448]/85" />
       </div>
 
       {/* Decorative pattern overlay */}
