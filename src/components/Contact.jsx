@@ -22,7 +22,7 @@ export default function Contact() {
           loading="lazy"
           aria-hidden="true"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0f2448]/95 via-[#16508C]/90 to-[#0d1f3c]/95" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#16508C]/95 via-[#16508C]/90 to-[#16508C]/95" />
       </div>
 
       {/* Decorative dots */}

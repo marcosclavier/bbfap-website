@@ -28,7 +28,7 @@ export default function AboutPage() {
       <section className="relative pt-32 pb-20 overflow-hidden" aria-labelledby="about-hero-heading">
         <div className="absolute inset-0">
           <img src="/images/team/team-dark.webp" alt="" className="w-full h-full object-cover object-top" loading="eager" />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0f2448]/85 via-[#16508C]/80 to-[#0f2448]/85" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#16508C]/85 via-[#16508C]/80 to-[#16508C]/85" />
         </div>
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
@@ -256,7 +256,7 @@ export default function AboutPage() {
             loading="lazy"
             aria-hidden="true"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0f2448]/95 via-[#16508C]/90 to-[#0d1f3c]/95" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#16508C]/95 via-[#16508C]/90 to-[#16508C]/95" />
         </div>
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,

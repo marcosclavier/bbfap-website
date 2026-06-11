@@ -68,7 +68,7 @@ export default function BlogPostPage() {
       <section className="relative pt-32 pb-20 overflow-hidden" aria-labelledby="post-hero-heading">
         <div className="absolute inset-0">
           <img src="/images/team/frederic-window.webp" alt="" className="w-full h-full object-cover object-top" loading="eager" />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0f2448]/92 via-[#16508C]/88 to-[#0f2448]/92" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#16508C]/92 via-[#16508C]/88 to-[#16508C]/92" />
         </div>
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
@@ -144,7 +144,7 @@ export default function BlogPostPage() {
             </div>
 
             {/* CTA */}
-            <div className="mt-16 p-8 bg-gradient-to-br from-[#0f2448] to-[#16508C] rounded-3xl text-center">
+            <div className="mt-16 p-8 bg-gradient-to-br from-[#16508C] to-[#16508C] rounded-3xl text-center">
               <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
                 Vous avez des questions sur ce sujet?
               </h2>
