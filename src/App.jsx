@@ -1,5 +1,5 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, lazy, Suspense } from 'react';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -11,6 +11,10 @@ import ContactPage from './pages/ContactPage';
 import ConseillerFinancierRiveSud from './pages/ConseillerFinancierRiveSud';
 import ConseillerFinancierMontreal from './pages/ConseillerFinancierMontreal';
 
+// Code-split: the admin editor (and its TipTap bundle) loads only on /admin,
+// never in the public site bundle.
+const AdminPage = lazy(() => import('./pages/AdminPage'));
+
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -20,6 +24,20 @@ function ScrollToTop() {
 }
 
 export default function App() {
+  const { pathname } = useLocation();
+  // The /admin editor is a standalone full-screen app — hide the public nav/footer.
+  const isAdmin = pathname.startsWith('/admin');
+
+  if (isAdmin) {
+    return (
+      <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-gray-500">Chargement…</div>}>
+        <Routes>
+          <Route path="/admin" element={<AdminPage />} />
+        </Routes>
+      </Suspense>
+    );
+  }
+
   return (
     <>
       <ScrollToTop />
