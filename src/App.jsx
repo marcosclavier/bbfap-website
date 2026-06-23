@@ -10,6 +10,7 @@ import BlogPostPage from './pages/BlogPostPage';
 import ContactPage from './pages/ContactPage';
 import ConseillerFinancierRiveSud from './pages/ConseillerFinancierRiveSud';
 import ConseillerFinancierMontreal from './pages/ConseillerFinancierMontreal';
+import NotFoundPage from './pages/NotFoundPage';
 
 // Code-split: the admin editor (and its TipTap bundle) loads only on /admin,
 // never in the public site bundle.
@@ -52,6 +53,7 @@ export default function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/conseiller-financier-rive-sud" element={<ConseillerFinancierRiveSud />} />
           <Route path="/conseiller-financier-montreal" element={<ConseillerFinancierMontreal />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
       <Footer />
