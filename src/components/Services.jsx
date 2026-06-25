@@ -146,9 +146,7 @@ export default function Services() {
                     </ul>
 
                     <a
-                      href="https://www.bbfap.com/prendre-rendez-vous"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href="/contact"
                       className={`inline-flex items-center gap-2 ${s.accent} hover:opacity-90 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200 w-fit`}
                     >
                       {s.cta}

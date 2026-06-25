@@ -1,0 +1,1489 @@
+{
+  "about": {
+    "pageKey": "about",
+    "title": "À propos",
+    "sections": [
+      {
+        "_key": "dbceacf62a00",
+        "_type": "heroSection",
+        "eyebrow": "À propos",
+        "heading": "Bélanger Brosseau – Le repreneuriat familial au cœur de notre approche",
+        "image": "/images/team/team-dark.webp",
+        "lead": "Un cabinet en services financiers sur la Rive-Sud de Montréal, bâti avec rigueur, transmis avec confiance et développé pour les entrepreneurs d'aujourd'hui."
+      },
+      {
+        "_key": "ad8e9194504a",
+        "_type": "proseSection",
+        "background": "white",
+        "body": [
+          {
+            "_key": "99c64a6eccb7",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "ebc9ba415f4e",
+                "_type": "span",
+                "marks": [],
+                "text": "Chez Bélanger Brosseau, notre histoire s'inscrit dans une continuité."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "e82652fb09f6",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "2f259a08f7b7",
+                "_type": "span",
+                "marks": [],
+                "text": "Celle d'un cabinet en services financiers établi sur la Rive-Sud de Montréal, qui accompagne depuis plus de 30 ans des clients à Saint-Hubert, Brossard, Longueuil, Boucherville, Saint-Bruno et les environs."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "e014c581d4c1",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "4440536e4406",
+                "_type": "span",
+                "marks": [],
+                "text": "Le repreneuriat familial est au cœur de notre approche : préserver une relation de proximité tout en faisant évoluer les stratégies en fiscalité, assurances et placements*."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "_key": "66334b112167",
+        "_type": "proseSection",
+        "background": "gray",
+        "body": [
+          {
+            "_key": "a8d9aba62e24",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "27bb78196fdd",
+                "_type": "span",
+                "marks": [],
+                "text": "Le repreneuriat familial ne se limite pas à un changement de direction."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "69d7ac13c40a",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "b17bb7108328",
+                "_type": "span",
+                "marks": [],
+                "text": "C'est un engagement à maintenir la confiance des clients, assurer la continuité des stratégies et faire évoluer l'accompagnement selon les réalités actuelles des entrepreneurs et professionnels incorporés."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "9dce2caa141c",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "3a68b5018bbb",
+                "_type": "span",
+                "marks": [],
+                "text": "Chez Bélanger Brosseau, cette transition a été réalisée de manière structurée, avec une priorité claire : protéger la qualité de la relation client."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "eyebrow": "Repreneuriat familial",
+        "heading": "Le repreneuriat familial chez Bélanger Brosseau"
+      },
+      {
+        "_key": "1a60507047f5",
+        "_type": "splitProseSection",
+        "background": "white",
+        "body": [
+          {
+            "_key": "801166fddd19",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "e75b7fb5d0bc",
+                "_type": "span",
+                "marks": [],
+                "text": "Fondé au tournant des années 90 par Annie Bélanger et Louis-Pierre Brosseau, le cabinet s'est développé autour de trois piliers essentiels :"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "d4eb1a71455e",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "51b91800b20b",
+                "_type": "span",
+                "marks": [],
+                "text": "Fiscalité"
+              }
+            ],
+            "level": 1,
+            "listItem": "bullet",
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "5bf8fbcfe56a",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "aaa1b976d7f5",
+                "_type": "span",
+                "marks": [],
+                "text": "Assurances"
+              }
+            ],
+            "level": 1,
+            "listItem": "bullet",
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "0a02e87d0f7c",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "f0d6c17e080e",
+                "_type": "span",
+                "marks": [],
+                "text": "Placements*"
+              }
+            ],
+            "level": 1,
+            "listItem": "bullet",
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "792ff8fcd27f",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "381d0c793b2c",
+                "_type": "span",
+                "marks": [],
+                "text": "Dès le départ, l'objectif était d'offrir des services financiers intégrés, adaptés aux besoins réels des clients de la Rive-Sud de Montréal."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "eyebrow": "Nos Origines",
+        "heading": "Les origines de Bélanger Brosseau",
+        "image": "/images/team/team-white.webp",
+        "imageAlt": "Annie Bélanger et Frédéric Babeux — Bélanger Brosseau",
+        "imageSide": "left"
+      },
+      {
+        "_key": "71aad9a2d7ca",
+        "_type": "splitProseSection",
+        "background": "gray",
+        "body": [
+          {
+            "_key": "22d054651a8c",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "746383134bc4",
+                "_type": "span",
+                "marks": [],
+                "text": "En 2019, Frédéric Babeux se joint à l'équipe. Cette intégration marque le début d'un processus de transition réfléchi, réalisé en collaboration étroite avec Louis-Pierre Brosseau."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "b2af827c410a",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "21d8cd15a393",
+                "_type": "span",
+                "marks": [],
+                "text": "En 2021, Frédéric reprend officiellement la direction de Bélanger Brosseau. Grâce à une année complète de transition, l'ensemble des clients a été conservé, assurant une continuité naturelle et rassurante."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "eyebrow": "Transition",
+        "heading": "Une transition réussie en repreneuriat familial",
+        "image": "/images/team/frederic-portrait.webp",
+        "imageAlt": "Frédéric Babeux — relève de BBFAP",
+        "imageSide": "right"
+      },
+      {
+        "_key": "4648b65091dd",
+        "_type": "splitProseSection",
+        "background": "white",
+        "body": [
+          {
+            "_key": "d9f2e09124b3",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "e4a05db2461f",
+                "_type": "span",
+                "marks": [],
+                "text": "Avec l'arrivée de Frédéric Babeux, l'offre de services s'élargit. Détenteur d'un permis en valeurs mobilières, il permet désormais aux clients d'accéder à :"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "79bd475ba0e9",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "1a6e767cc39c",
+                "_type": "span",
+                "marks": [],
+                "text": "Actions"
+              }
+            ],
+            "level": 1,
+            "listItem": "bullet",
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "f6ac58bf25fc",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "d119cc09e3d3",
+                "_type": "span",
+                "marks": [],
+                "text": "Obligations"
+              }
+            ],
+            "level": 1,
+            "listItem": "bullet",
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "614e33f24941",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "077e1e295f83",
+                "_type": "span",
+                "marks": [],
+                "text": "Fonds négociés en bourse (FNB)"
+              }
+            ],
+            "level": 1,
+            "listItem": "bullet",
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "c66ddef2e3ba",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "1aa6424ba584",
+                "_type": "span",
+                "marks": [],
+                "text": "Cette évolution permet à Bélanger Brosseau d'offrir une alternative complète aux institutions financières traditionnelles, tout en conservant une approche humaine et personnalisée."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "eyebrow": "Évolution",
+        "heading": "L'évolution de Bélanger Brosseau en services financiers",
+        "image": "/images/team/frederic-window.webp",
+        "imageAlt": "Frédéric Babeux, gestionnaire de portefeuille — Bélanger Brosseau",
+        "imageSide": "left"
+      },
+      {
+        "_key": "0251f2c71717",
+        "_type": "listSection",
+        "background": "gray",
+        "eyebrow": "Notre Clientèle",
+        "heading": "Un accompagnement personnalisé pour chaque client",
+        "intro": "Aujourd'hui, Bélanger Brosseau accompagne avec fierté plus de 150 entrepreneurs, professionnels et familles, dont :",
+        "items": [
+          "Entrepreneurs incorporés",
+          "Médecins, dentistes, ingénieurs, optométristes",
+          "Investisseurs immobiliers",
+          "Consultants et jeunes professionnels",
+          "Familles avec un patrimoine important",
+          "Propriétaires d'entreprise"
+        ],
+        "outro": "Chaque client bénéficie d'un accompagnement adapté à sa réalité, avec une attention particulière portée à la structure corporative, à la fiscalité et à la croissance du patrimoine."
+      },
+      {
+        "_key": "bdb52c34a40b",
+        "_type": "ctaSection",
+        "buttonLabel": "Prenez rendez-vous",
+        "buttonUrl": "/contact",
+        "eyebrow": "Notre Engagement",
+        "heading": "Continuité, rigueur et relation de confiance",
+        "image": "/images/generated/section-contact.webp",
+        "paragraphs": [
+          "Le repreneuriat familial chez Bélanger Brosseau se traduit par une volonté claire : assurer la continuité tout en améliorant constamment la qualité du service.",
+          "Nous croyons qu'une relation durable repose sur la confiance, la transparence et une compréhension approfondie de votre situation.",
+          "C'est cette philosophie qui guide chacune de nos recommandations, aujourd'hui comme demain."
+        ]
+      }
+    ],
+    "seo": null
+  },
+  "conseiller-montreal": {
+    "pageKey": "conseiller-montreal",
+    "title": "Conseiller financier — Montréal",
+    "sections": [
+      {
+        "_key": "bcaf025799a3",
+        "_type": "heroSection",
+        "eyebrow": "Conseiller financier — Montréal & Grand Montréal",
+        "heading": "Conseiller financier à Montréal",
+        "image": "/images/team/team-dark.webp",
+        "paragraphs": [
+          "Bélanger Brosseau est un cabinet financier indépendant qui accompagne les entrepreneurs, les professionnels incorporés et les familles de Montréal et du Grand Montréal.",
+          "Une équipe, une vision : fiscalité, assurances et placements* réunis sous un même toit pour des décisions financières claires et cohérentes."
+        ],
+        "primaryLabel": "Prendre rendez-vous",
+        "primaryUrl": "/contact",
+        "secondaryLabel": "Découvrir nos services",
+        "secondaryUrl": "/services",
+        "subheading": "Fiscalité, assurances et placements* pour les entrepreneurs et professionnels du Grand Montréal."
+      },
+      {
+        "_key": "aceb169cfc14",
+        "_type": "proseSection",
+        "background": "white",
+        "body": [
+          {
+            "_key": "e70f61f5ce1f",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "76fbea24557e",
+                "_type": "span",
+                "marks": [],
+                "text": "Que vous soyez en début de parcours ou en phase d'optimisation, nous vous accompagnons partout dans le Grand Montréal avec une approche structurée et indépendante."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "a3a01be1ac7e",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "21aa7f5858de",
+                "_type": "span",
+                "marks": [],
+                "text": "Pas besoin de vous déplacer : nous vous rencontrons à domicile ou par vidéoconférence, de jour comme de soir, selon vos disponibilités. Notre bureau principal est situé à Saint-Hubert, à quelques minutes du centre-ville de Montréal."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "cfdd4ec1aba2",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "9379b5bbebff",
+                "_type": "span",
+                "marks": [],
+                "text": "Notre objectif : vous aider à prendre des décisions financières cohérentes en tenant compte de votre réalité professionnelle, de votre structure corporative et de vos objectifs."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "eyebrow": "Au service du Grand Montréal",
+        "heading": "Un conseiller financier accessible où que vous soyez à Montréal"
+      },
+      {
+        "_key": "6f11da07fb39",
+        "_type": "servicesGridSection",
+        "background": "gray",
+        "eyebrow": "Nos services financiers",
+        "heading": "Des services financiers intégrés pour les Montréalais",
+        "items": [
+          {
+            "_key": "5ff84ce2dd71",
+            "bullets": [
+              "Optimisation de la structure corporative",
+              "Gestion des revenus",
+              "Réduction des impacts fiscaux"
+            ],
+            "desc": "La fiscalité est au cœur de chaque décision financière. Nous aidons les entrepreneurs du Grand Montréal à structurer et optimiser leur situation.",
+            "title": "Fiscalité"
+          },
+          {
+            "_key": "9706e727af71",
+            "bullets": [
+              "Assurance vie",
+              "Assurance invalidité",
+              "Assurance maladies graves"
+            ],
+            "desc": "Protéger votre revenu, votre famille et votre entreprise avec des couvertures adaptées à vos besoins réels.",
+            "title": "Assurances"
+          },
+          {
+            "_key": "c26f6b76c41c",
+            "bullets": [
+              "Actions et obligations",
+              "Fonds négociés en bourse (FNB)",
+              "Gestion discrétionnaire disponible"
+            ],
+            "desc": "Des portefeuilles structurés avec discipline, en cohérence avec votre réalité fiscale et corporative.",
+            "title": "Placements*"
+          }
+        ]
+      },
+      {
+        "_key": "14001bb7bb53",
+        "_type": "areasSection",
+        "areas": [
+          "Montréal",
+          "Grand Montréal",
+          "Rive-Sud",
+          "Longueuil",
+          "Brossard",
+          "Saint-Lambert",
+          "Boucherville"
+        ],
+        "background": "white",
+        "eyebrow": "Secteurs desservis",
+        "heading": "Nous accompagnons les clients de Montréal et des environs",
+        "intro": "Depuis notre cabinet de la Rive-Sud, nous accompagnons une clientèle répartie dans tout le Grand Montréal, sur place ou par vidéoconférence :"
+      },
+      {
+        "_key": "18d624884978",
+        "_type": "statsBandSection",
+        "stats": [
+          {
+            "_key": "e89b2a1dd7d2",
+            "label": "Années d'expérience",
+            "value": "30+"
+          },
+          {
+            "_key": "4d3ec6a10051",
+            "label": "Entrepreneurs accompagnés",
+            "value": "100+"
+          },
+          {
+            "_key": "d58244cca486",
+            "label": "Assureurs partenaires",
+            "value": "22"
+          },
+          {
+            "_key": "ec67150056e7",
+            "label": "Familles servies sur plusieurs générations",
+            "value": "33%"
+          }
+        ]
+      },
+      {
+        "_key": "5c44edf1c8ae",
+        "_type": "featureGridSection",
+        "background": "gray",
+        "eyebrow": "Pourquoi nous choisir",
+        "heading": "Pourquoi choisir Bélanger Brosseau à Montréal",
+        "items": [
+          {
+            "_key": "a16220e6623c",
+            "description": "Pas de produits maison, pas de conflits d'intérêts — vos intérêts seulement.",
+            "title": "Cabinet 100% indépendant"
+          },
+          {
+            "_key": "6811e38c4499",
+            "description": "À domicile ou par vidéoconférence, de jour comme de soir, partout dans le Grand Montréal.",
+            "title": "Rencontres flexibles"
+          },
+          {
+            "_key": "c2d8c444ccdf",
+            "description": "Annie Bélanger (M. Fisc.) est impliquée dans chaque dossier dès le départ.",
+            "title": "Fiscaliste attitrée à votre dossier"
+          },
+          {
+            "_key": "94c4b4fa6984",
+            "description": "Frédéric Babeux (CIM) offre un service normalement réservé aux grandes banques.",
+            "title": "Gestion discrétionnaire disponible"
+          }
+        ],
+        "variant": "check"
+      },
+      {
+        "_key": "d02998775d4d",
+        "_type": "ctaSection",
+        "buttonLabel": "Prendre rendez-vous",
+        "buttonUrl": "/contact",
+        "heading": "Discutons de votre situation financière",
+        "image": "/images/generated/section-contact.webp",
+        "paragraphs": [
+          "Une bonne structure financière commence toujours par une bonne compréhension.",
+          "Prenez rendez-vous avec un conseiller — où que vous soyez à Montréal — pour faire le point sur votre fiscalité, vos assurances et vos placements*."
+        ]
+      }
+    ],
+    "seo": {
+      "canonical": "https://belangerbrosseau.com/conseiller-financier-montreal",
+      "description": "Conseiller financier pour les clients de Montréal et du Grand Montréal. Cabinet indépendant en fiscalité, assurances et placements pour entrepreneurs et professionnels. Rencontres à domicile ou par vidéoconférence.",
+      "title": "Conseiller financier à Montréal | Bélanger Brosseau — Fiscalité, Assurances & Placements"
+    }
+  },
+  "conseiller-rive-sud": {
+    "pageKey": "conseiller-rive-sud",
+    "title": "Conseiller financier — Rive-Sud",
+    "sections": [
+      {
+        "_key": "55dad607e5b9",
+        "_type": "heroSection",
+        "eyebrow": "Conseiller financier — Rive-Sud de Montréal",
+        "heading": "Conseiller financier sur la Rive-Sud de Montréal",
+        "image": "/images/original/hero.webp",
+        "paragraphs": [
+          "Établi à Saint-Hubert, Bélanger Brosseau est un cabinet financier indépendant qui accompagne les entrepreneurs, les professionnels incorporés et les familles de toute la Rive-Sud de Montréal.",
+          "Une équipe, une vision : nous réunissons la fiscalité, les assurances et les placements* sous un même toit pour des décisions financières claires et cohérentes."
+        ],
+        "primaryLabel": "Prendre rendez-vous",
+        "primaryUrl": "/contact",
+        "secondaryLabel": "Découvrir nos services",
+        "secondaryUrl": "/services",
+        "subheading": "Fiscalité, assurances et placements* pour les entrepreneurs et professionnels de la Rive-Sud."
+      },
+      {
+        "_key": "1eab7ec734e0",
+        "_type": "proseSection",
+        "background": "white",
+        "body": [
+          {
+            "_key": "732ede93730c",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "45aa638b3315",
+                "_type": "span",
+                "marks": [],
+                "text": "Depuis nos bureaux du 5215, chemin Chambly à Saint-Hubert, nous servons une clientèle locale qui cherche bien plus qu'un produit financier : une stratégie intégrée et un accompagnement durable."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "7b4ace7652a5",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "7a33cec23b95",
+                "_type": "span",
+                "marks": [],
+                "text": "Notre proximité avec les entrepreneurs et professionnels de la Rive-Sud nous permet de comprendre votre réalité corporative et de bâtir des solutions adaptées à votre situation."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "7d45a611bcb7",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "b6aabf7e9f19",
+                "_type": "span",
+                "marks": [],
+                "text": "Rencontrez-nous à nos bureaux, à domicile ou par vidéoconférence — de jour comme de soir, selon vos disponibilités."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "eyebrow": "Votre cabinet de proximité",
+        "heading": "Un conseiller financier ancré sur la Rive-Sud"
+      },
+      {
+        "_key": "5265a5f6a8d9",
+        "_type": "servicesGridSection",
+        "background": "gray",
+        "eyebrow": "Nos services financiers",
+        "heading": "Des services intégrés pour les clients de la Rive-Sud",
+        "items": [
+          {
+            "_key": "45ea41784895",
+            "bullets": [
+              "Optimisation de la structure corporative",
+              "Gestion des revenus",
+              "Réduction des impacts fiscaux"
+            ],
+            "desc": "La fiscalité est au cœur de chaque décision financière. Nous aidons les entrepreneurs de la Rive-Sud à structurer et optimiser leur situation.",
+            "title": "Fiscalité"
+          },
+          {
+            "_key": "dfa86c570250",
+            "bullets": [
+              "Assurance vie",
+              "Assurance invalidité",
+              "Assurance maladies graves"
+            ],
+            "desc": "Protéger votre revenu, votre famille et votre entreprise avec des couvertures adaptées à vos besoins réels.",
+            "title": "Assurances"
+          },
+          {
+            "_key": "ddb59035df8e",
+            "bullets": [
+              "Actions et obligations",
+              "Fonds négociés en bourse (FNB)",
+              "Gestion discrétionnaire disponible"
+            ],
+            "desc": "Des portefeuilles structurés avec discipline, en cohérence avec votre réalité fiscale et corporative.",
+            "title": "Placements*"
+          }
+        ]
+      },
+      {
+        "_key": "8e2c7828276c",
+        "_type": "areasSection",
+        "areas": [
+          "Saint-Hubert",
+          "Brossard",
+          "Longueuil",
+          "Boucherville",
+          "Saint-Bruno-de-Montarville",
+          "Saint-Lambert",
+          "Saint-Constant"
+        ],
+        "background": "white",
+        "eyebrow": "Secteurs desservis",
+        "heading": "Nous accompagnons les clients de toute la Rive-Sud",
+        "intro": "Notre cabinet de Saint-Hubert dessert l'ensemble de la Rive-Sud de Montréal. Voici quelques-uns des secteurs où nous accompagnons nos clients :"
+      },
+      {
+        "_key": "f658de3d19b3",
+        "_type": "statsBandSection",
+        "stats": [
+          {
+            "_key": "e89b2a1dd7d2",
+            "label": "Années d'expérience",
+            "value": "30+"
+          },
+          {
+            "_key": "4d3ec6a10051",
+            "label": "Entrepreneurs accompagnés",
+            "value": "100+"
+          },
+          {
+            "_key": "d58244cca486",
+            "label": "Assureurs partenaires",
+            "value": "22"
+          },
+          {
+            "_key": "ec67150056e7",
+            "label": "Familles servies sur plusieurs générations",
+            "value": "33%"
+          }
+        ]
+      },
+      {
+        "_key": "1b48c11472be",
+        "_type": "featureGridSection",
+        "background": "gray",
+        "eyebrow": "Pourquoi nous choisir",
+        "heading": "Pourquoi choisir Bélanger Brosseau sur la Rive-Sud",
+        "items": [
+          {
+            "_key": "e8f2470a4ca4",
+            "description": "Pas de produits maison, pas de conflits d'intérêts — vos intérêts seulement.",
+            "title": "Cabinet 100% indépendant"
+          },
+          {
+            "_key": "f70b6fcff833",
+            "description": "Annie Bélanger (M. Fisc.) est impliquée dans chaque dossier dès le départ.",
+            "title": "Fiscaliste attitrée à votre dossier"
+          },
+          {
+            "_key": "6c1d11507e9a",
+            "description": "Appelez ou écrivez — nous vous répondons rapidement.",
+            "title": "Retours garantis en moins de 24h"
+          },
+          {
+            "_key": "c2fa95b74fa5",
+            "description": "33% de nos familles sont servies sur plus d'une génération.",
+            "title": "Approche multi-générationnelle"
+          }
+        ],
+        "variant": "check"
+      },
+      {
+        "_key": "14b4eac7b54a",
+        "_type": "ctaSection",
+        "buttonLabel": "Prendre rendez-vous",
+        "buttonUrl": "/contact",
+        "heading": "Discutons de votre situation financière",
+        "image": "/images/generated/section-contact.webp",
+        "paragraphs": [
+          "Une bonne structure financière commence toujours par une bonne compréhension.",
+          "Prenez rendez-vous avec un conseiller de la Rive-Sud pour faire le point sur votre fiscalité, vos assurances et vos placements*."
+        ]
+      }
+    ],
+    "seo": {
+      "canonical": "https://belangerbrosseau.com/conseiller-financier-rive-sud",
+      "description": "Conseiller financier sur la Rive-Sud de Montréal. Cabinet indépendant à Saint-Hubert en fiscalité, assurances et placements pour entrepreneurs, professionnels et familles de Brossard, Longueuil, Boucherville et environs.",
+      "title": "Conseiller financier Rive-Sud de Montréal | Bélanger Brosseau — Fiscalité, Assurances & Placements"
+    }
+  },
+  "contact": {
+    "pageKey": "contact",
+    "title": "Contact",
+    "sections": [
+      {
+        "_key": "82a0b0e8a02e",
+        "_type": "heroSection",
+        "eyebrow": "Contact",
+        "heading": "Discutons de votre situation financière",
+        "image": "/images/generated/section-contact.webp",
+        "lead": "Que vous soyez en début de parcours ou en phase d'optimisation, une discussion permet souvent de clarifier les prochaines étapes."
+      },
+      {
+        "_key": "3f02000552fb",
+        "_type": "contactFormSection",
+        "addressLines": [
+          "5215 Chemin Chambly",
+          "Saint-Hubert, QC J3Y 3N5"
+        ],
+        "heading": "Prenez rendez-vous",
+        "intro": "Remplissez le formulaire ci-dessous et nous vous contacterons dans les 24 heures pour planifier une rencontre.",
+        "officeName": "Notre bureau",
+        "photoAlt": "Annie Bélanger et Frédéric Babeux, conseillers chez BBFAP",
+        "photoCaptionName": "Annie Bélanger & Frédéric Babeux",
+        "photoCaptionRole": "Vos conseillers chez BBFAP",
+        "photoImage": "/images/original/team.webp",
+        "trustHeading": "Pourquoi choisir BBFAP?",
+        "trustItems": [
+          {
+            "_key": "e34ca4599f47",
+            "desc": "Appelez ou écrivez — nous vous répondons rapidement.",
+            "title": "Retours garantis en moins de 24h"
+          },
+          {
+            "_key": "a37de0422626",
+            "desc": "Pas de produits maison, pas de conflits d'intérêts — vos intérêts seulement.",
+            "title": "Cabinet 100% indépendant"
+          },
+          {
+            "_key": "d16e555fe6ea",
+            "desc": "Annie Bélanger (M. Fisc.) impliquée dans chaque dossier dès le départ.",
+            "title": "Fiscaliste attitrée à votre dossier"
+          },
+          {
+            "_key": "af9e8a2cdcfe",
+            "desc": "33% de nos familles sont servies sur plus d'une génération.",
+            "title": "Approche multi-générationnelle"
+          },
+          {
+            "_key": "ae8ed2d5cd58",
+            "desc": "Frédéric Babeux (CIM) offre ce service à valeur ajoutée normalement réservé aux grandes banques.",
+            "title": "Gestion discrétionnaire disponible"
+          }
+        ]
+      },
+      {
+        "_key": "9e52d14ddb0e",
+        "_type": "mapSection",
+        "embedUrl": "https://www.google.com/maps?q=5215+Chemin+Chambly+Saint-Hubert+QC+J3Y+3N5&output=embed",
+        "heading": "Nous trouver",
+        "iframeTitle": "Emplacement de BBFAP — 5215 Chemin Chambly, Saint-Hubert"
+      }
+    ],
+    "seo": null
+  },
+  "home": {
+    "pageKey": "home",
+    "title": "Accueil",
+    "sections": [
+      {
+        "_key": "bf81b0695cf4",
+        "_type": "homeHeroSection",
+        "badges": [
+          {
+            "_key": "7ff6bc37ce6a",
+            "label": "Entrepreneurs accompagnés",
+            "value": "100+"
+          },
+          {
+            "_key": "40705af11f43",
+            "label": "Années d'expérience",
+            "value": "30+"
+          },
+          {
+            "_key": "01cb214c2727",
+            "label": "Assureurs partenaires",
+            "value": "22"
+          }
+        ],
+        "eyebrow": "Conseiller Financier Indépendant — Saint-Hubert",
+        "heading": "Bélanger Brosseau – Services financiers à {{Saint-Hubert}} et sur la Rive-Sud de Montréal",
+        "image": "/images/team/team-white.webp",
+        "lead": "Fiscalité, assurances et placements* pour les entrepreneurs et professionnels incorporés de Brossard, Longueuil, Boucherville, Saint-Lambert, Saint-Bruno et Saint-Constant. Une approche structurée, claire et adaptée à votre réalité.",
+        "primaryLabel": "Parler à un conseiller",
+        "primaryUrl": "/contact",
+        "secondaryLabel": "Découvrir nos services",
+        "secondaryUrl": "/services"
+      },
+      {
+        "_key": "2d748700d422",
+        "_type": "proseSection",
+        "anchorId": "introduction",
+        "background": "white",
+        "body": [
+          {
+            "_key": "ce5cc6461fe3",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "4429750fb622",
+                "_type": "span",
+                "marks": [],
+                "text": "Chez Bélanger Brosseau, nous offrons des services financiers intégrés en fiscalité, assurances et placements* pour les entrepreneurs et professionnels incorporés de la Rive-Sud de Montréal."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "cd46d4a750ca",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "b47d958bc1d6",
+                "_type": "span",
+                "marks": [],
+                "text": "Basés à Saint-Hubert, nous accompagnons une clientèle située à Brossard, Longueuil, Boucherville, Saint-Lambert, Saint-Bruno et Saint-Constant, avec une approche structurée, claire et adaptée à leur réalité."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "fb6f36ac96d0",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "92331fdcdfc8",
+                "_type": "span",
+                "marks": [],
+                "text": "Notre objectif est simple : vous aider à prendre de meilleures décisions financières, avec cohérence et rigueur."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "eyebrow": "À propos de Bélanger Brosseau",
+        "heading": "Une approche claire et structurée"
+      },
+      {
+        "_key": "c60e9487da30",
+        "_type": "approachSection",
+        "background": "gray",
+        "eyebrow": "Notre Méthode",
+        "heading": "Quelle est l'approche de Bélanger Brosseau ?",
+        "steps": [
+          {
+            "_key": "9dffd4bea8b5",
+            "description": "Nous analysons votre situation globale : fiscalité, structure corporative, assurances en place et stratégies de placements*. Cette étape permet d'identifier les optimisations possibles et les zones à améliorer.",
+            "title": "Évaluation financière complète"
+          },
+          {
+            "_key": "476d3b054310",
+            "description": "Nous mettons en place des solutions concrètes en fiscalité, assurances et placements*, adaptées à votre réalité d'entrepreneur ou de professionnel incorporé.",
+            "title": "Implantation de stratégies adaptées"
+          },
+          {
+            "_key": "1060e196d04a",
+            "description": "Nous assurons un suivi régulier pour ajuster vos stratégies selon l'évolution de votre situation et des règles fiscales.",
+            "title": "Suivi et ajustements continus"
+          }
+        ],
+        "tagline": "Une méthode claire en trois étapes : évaluation, implantation, suivi."
+      },
+      {
+        "_key": "a8b29bad20a8",
+        "_type": "servicesSection",
+        "ctaLabel": "En savoir plus sur nos services",
+        "ctaUrl": "/services",
+        "eyebrow": "Nos Services",
+        "heading": "Trois expertises. Une équipe.",
+        "items": [
+          {
+            "_key": "70e6644b0f53",
+            "description": "Des stratégies d'investissement adaptées à votre profil, vos objectifs et votre réalité professionnelle.",
+            "title": "Placements* et gestion de patrimoine"
+          },
+          {
+            "_key": "a8375305d369",
+            "description": "Des solutions pour protéger votre revenu, votre famille et votre entreprise face aux imprévus.",
+            "title": "Assurance de personnes et protection financière"
+          },
+          {
+            "_key": "c41dc4daeda6",
+            "description": "Une vision d'ensemble qui relie fiscalité, retraite, décaissement et structure corporative.",
+            "title": "Un service de conseils financiers personnalisé"
+          }
+        ]
+      },
+      {
+        "_key": "4673d42f2992",
+        "_type": "featureGridSection",
+        "background": "gray",
+        "eyebrow": "Pourquoi Bélanger Brosseau",
+        "heading": "Ce qui nous distingue",
+        "items": [
+          {
+            "_key": "8d25dfca3b1f",
+            "description": "Chaque recommandation repose sur une analyse complète et réfléchie.",
+            "title": "Une approche structurée et rigoureuse"
+          },
+          {
+            "_key": "879d9fc22869",
+            "description": "Nous considérons l'ensemble de votre situation, pas seulement un produit ou une décision isolée.",
+            "title": "Une vision globale"
+          },
+          {
+            "_key": "636bade5fdab",
+            "description": "Des explications simples pour des décisions éclairées.",
+            "title": "Une communication claire"
+          },
+          {
+            "_key": "455598e1d331",
+            "description": "Un accompagnement dans le temps, adapté à l'évolution de votre situation.",
+            "title": "Une relation durable"
+          }
+        ]
+      },
+      {
+        "_key": "8be331ae9ab6",
+        "_type": "splitProseSection",
+        "background": "white",
+        "badgeLabel": "ans d'expérience",
+        "badgeValue": "30+",
+        "body": [
+          {
+            "_key": "280fa81ac660",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "dfbf96f8cb0f",
+                "_type": "span",
+                "marks": [],
+                "text": "Bélanger Brosseau, c'est avant tout une relation de confiance. Nous prenons le temps de bien comprendre votre réalité — vos projets, vos préoccupations, votre vision — pour vous accompagner avec constance et transparence."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "f1c504ee28a0",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "19e3cb7b58af",
+                "_type": "span",
+                "marks": [],
+                "text": "Notre objectif est de vous aider à prendre des décisions financières cohérentes, alignées avec vos priorités personnelles et professionnelles, dans un cadre structuré et transparent."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "eyebrow": "Notre Approche",
+        "heading": "Une relation humaine au coeur de chaque décision",
+        "image": "/images/team/team-dark.webp",
+        "imageAlt": "Annie Bélanger et Frédéric Babeux — Bélanger Brosseau",
+        "imageSide": "left",
+        "linkLabel": "En savoir plus sur notre histoire",
+        "linkUrl": "/a-propos"
+      },
+      {
+        "_key": "5e96ac739b83",
+        "_type": "ctaSection",
+        "buttonLabel": "Prenez rendez-vous",
+        "buttonUrl": "/contact",
+        "eyebrow": "Prenez les devants",
+        "heading": "Rencontrez Bélanger Brosseau à Saint-Hubert",
+        "image": "/images/generated/section-contact.webp",
+        "paragraphs": [
+          "Vous êtes situé sur la Rive-Sud de Montréal et souhaitez structurer vos décisions en fiscalité, assurances ou placements* ? Une discussion permet souvent de clarifier rapidement votre situation et les prochaines étapes.",
+          "Prenez rendez-vous avec Bélanger Brosseau pour une approche claire, structurée et adaptée à votre réalité."
+        ]
+      }
+    ],
+    "seo": null
+  },
+  "services": {
+    "pageKey": "services",
+    "title": "Services",
+    "sections": [
+      {
+        "_key": "d5f855ff050d",
+        "_type": "heroSection",
+        "eyebrow": "Nos Services",
+        "heading": "Nos services financiers chez Bélanger Brosseau – Rive-Sud de Montréal",
+        "image": "/images/team/frederic-headshot.webp",
+        "paragraphs": [
+          "Chez Bélanger Brosseau, nous offrons des services financiers complets qui s'articulent autour de trois piliers essentiels : la fiscalité, les assurances et les placements*.",
+          "Basés à Saint-Hubert, nous accompagnons une clientèle située à Brossard, Longueuil, Boucherville, Saint-Bruno, Saint-Lambert, Saint-Constant, et toute la Rive-Sud de Montréal.",
+          "Notre objectif est de vous aider à prendre des décisions financières cohérentes, en tenant compte de votre réalité professionnelle, de votre structure corporative et de vos objectifs."
+        ],
+        "subheading": "Des services en fiscalité, assurances et placements* pour les entrepreneurs et professionnels de Saint-Hubert, Brossard, Longueuil et la Rive-Sud."
+      },
+      {
+        "_key": "2ab078fa54c3",
+        "_type": "approachSection",
+        "background": "white",
+        "eyebrow": "L’approche Bélanger Brosseau en services financiers",
+        "heading": "Une méthode structurée : évaluation, implantation, suivi",
+        "steps": [
+          {
+            "_key": "dfa46023a5a5",
+            "description": "Nous réalisons une analyse complète de votre situation : fiscalité, structure corporative, assurances en place et placements*. Cette étape permet d'identifier les opportunités d'optimisation pour les entrepreneurs et professionnels de la Rive-Sud de Montréal.",
+            "title": "Évaluation"
+          },
+          {
+            "_key": "ea799cb6cced",
+            "description": "Nous mettons en place des stratégies concrètes en fiscalité, assurances et placements*, adaptées à votre réalité. Chaque solution est choisie avec rigueur, sans complexité inutile.",
+            "title": "Implantation"
+          },
+          {
+            "_key": "ef31f48844ea",
+            "description": "Votre situation évolue. Nous assurons un suivi régulier pour ajuster vos stratégies selon l'évolution de votre situation et des règles fiscales.",
+            "title": "Suivi"
+          }
+        ]
+      },
+      {
+        "_key": "109efcb61662",
+        "_type": "serviceDetailSection",
+        "accent": "blue",
+        "background": "gray",
+        "body": [
+          {
+            "_key": "b55a42b22bf2",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "341d21ad4f8a",
+                "_type": "span",
+                "marks": [],
+                "text": "La fiscalité est un levier central dans toute décision financière."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "bc338c2d8c09",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "030f93df85e8",
+                "_type": "span",
+                "marks": [],
+                "text": "Chez Bélanger Brosseau, nous accompagnons les clients de Saint-Hubert, Brossard, Longueuil et les environs dans :"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "c23a435292ba",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "aade42a7f7f2",
+                "_type": "span",
+                "marks": [],
+                "text": "L'optimisation de la structure corporative"
+              }
+            ],
+            "level": 1,
+            "listItem": "bullet",
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "8c600549df55",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "74f201c732ad",
+                "_type": "span",
+                "marks": [],
+                "text": "La gestion des revenus"
+              }
+            ],
+            "level": 1,
+            "listItem": "bullet",
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "c9985fb7981c",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "3c574155c952",
+                "_type": "span",
+                "marks": [],
+                "text": "La réduction des impacts fiscaux"
+              }
+            ],
+            "level": 1,
+            "listItem": "bullet",
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "7737fcc58ce6",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "bd6f01080952",
+                "_type": "span",
+                "marks": [],
+                "text": "Notre objectif est d'assurer une cohérence entre vos décisions fiscales, vos assurances et vos placements*."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "heading": "Fiscalité – Services financiers Bélanger Brosseau sur la Rive-Sud",
+        "image": "/images/generated/service-fiscalite.webp",
+        "imageAlt": "Services de fiscalité — BBFAP",
+        "imageSide": "left"
+      },
+      {
+        "_key": "a3d7780d4ce9",
+        "_type": "serviceDetailSection",
+        "accent": "indigo",
+        "background": "white",
+        "body": [
+          {
+            "_key": "3ec3bf62cb10",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "3dbc3b9f75e2",
+                "_type": "span",
+                "marks": [],
+                "text": "Les assurances permettent de sécuriser votre situation financière."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "b2adb68b6000",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "9bf97b9d52d5",
+                "_type": "span",
+                "marks": [],
+                "text": "Nous aidons les entrepreneurs et professionnels de la Rive-Sud de Montréal à mettre en place des protections adaptées :"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "708ba4d15e37",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "ec74cedd091c",
+                "_type": "span",
+                "marks": [],
+                "text": "Assurance vie"
+              }
+            ],
+            "level": 1,
+            "listItem": "bullet",
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "dd0adc7a67e3",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "d0756cf63016",
+                "_type": "span",
+                "marks": [],
+                "text": "Assurance invalidité"
+              }
+            ],
+            "level": 1,
+            "listItem": "bullet",
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "8a2051766551",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "05c0b8c898ca",
+                "_type": "span",
+                "marks": [],
+                "text": "Assurance maladies graves"
+              }
+            ],
+            "level": 1,
+            "listItem": "bullet",
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "7564707551f2",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "0d95d797ef23",
+                "_type": "span",
+                "marks": [],
+                "text": "Chaque recommandation est basée sur vos besoins réels, sans surplus."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "heading": "Assurances – Protéger votre revenu et votre entreprise",
+        "image": "/images/generated/service-assurances.webp",
+        "imageAlt": "Services d'assurances — BBFAP",
+        "imageSide": "right"
+      },
+      {
+        "_key": "0b2b22e06ea6",
+        "_type": "serviceDetailSection",
+        "accent": "amber",
+        "background": "gray",
+        "body": [
+          {
+            "_key": "02b548b9a736",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "3dad88742d42",
+                "_type": "span",
+                "marks": [],
+                "text": "Les placements* doivent être structurés avec discipline et cohérence."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "0eac1cf97439",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "cf12b923b107",
+                "_type": "span",
+                "marks": [],
+                "text": "Nous offrons aux clients de Saint-Hubert et de la Rive-Sud un accès à :"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "b0fa482084b3",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "2938fb441a87",
+                "_type": "span",
+                "marks": [],
+                "text": "Actions"
+              }
+            ],
+            "level": 1,
+            "listItem": "bullet",
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "412ce98d38ac",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "9702d7991b12",
+                "_type": "span",
+                "marks": [],
+                "text": "Obligations"
+              }
+            ],
+            "level": 1,
+            "listItem": "bullet",
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "e8ef0d6072c6",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "5c8144e63f07",
+                "_type": "span",
+                "marks": [],
+                "text": "Fonds négociés en bourse (FNB)"
+              }
+            ],
+            "level": 1,
+            "listItem": "bullet",
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "ea63f6a73b1e",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "3dc187ac0446",
+                "_type": "span",
+                "marks": [],
+                "text": "Nous construisons des portefeuilles adaptés à votre profil, en tenant compte de votre réalité fiscale et corporative."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "heading": "Placements* – Stratégies d'investissement avec Bélanger Brosseau",
+        "image": "/images/generated/service-placements.webp",
+        "imageAlt": "Services de placements — BBFAP",
+        "imageSide": "left"
+      },
+      {
+        "_key": "45284ca380da",
+        "_type": "proseSection",
+        "background": "white",
+        "body": [
+          {
+            "_key": "3f78865ddf40",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "62c59f669183",
+                "_type": "span",
+                "marks": [],
+                "text": "Chez Bélanger Brosseau, nous croyons qu'un service financier efficace repose sur l'intégration."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "d1ad6f2f5852",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "97d6e792ee09",
+                "_type": "span",
+                "marks": [],
+                "text": "La fiscalité, les assurances et les placements* doivent fonctionner ensemble pour éviter les incohérences."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "1406fba7ec7a",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "83913dc71530",
+                "_type": "span",
+                "marks": [],
+                "text": "C'est cette approche globale qui nous permet d'accompagner efficacement les clients de Brossard, Longueuil, Boucherville, Saint-Bruno et Saint-Lambert."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "eyebrow": "Intégration des services",
+        "heading": "Des services financiers intégrés : fiscalité, assurances et placements*"
+      },
+      {
+        "_key": "3fdf0261c053",
+        "_type": "listSection",
+        "background": "gray",
+        "ctaLabel": "Et bien d'autres — contactez-nous pour en savoir plus",
+        "ctaUrl": "/contact",
+        "eyebrow": "Clientèle",
+        "heading": "Services financiers pour entrepreneurs – Rive-Sud de Montréal",
+        "intro": "Nos services s'adressent principalement aux entrepreneurs, professionnels et familles qui souhaitent structurer efficacement leur situation financière :",
+        "items": [
+          "Entrepreneurs incorporés",
+          "Médecins, dentistes, ingénieurs, optométristes…",
+          "Investisseurs immobiliers",
+          "Consultants et jeunes professionnels",
+          "Familles avec un patrimoine important"
+        ],
+        "layout": "grid2",
+        "outro": "Nous comprenons les enjeux liés à la réalité corporative et aux décisions financières complexes."
+      },
+      {
+        "_key": "4c09db414a78",
+        "_type": "ctaSection",
+        "buttonLabel": "Prenez rendez-vous",
+        "buttonUrl": "/contact",
+        "heading": "Discutons de votre situation",
+        "image": "/images/generated/section-contact.webp",
+        "paragraphs": [
+          "Une bonne structure financière commence toujours par une bonne compréhension.",
+          "Prenez rendez-vous pour échanger sur votre situation actuelle et voir comment nos services en fiscalité, assurances et placements* peuvent vous apporter plus de clarté et de cohérence."
+        ]
+      }
+    ],
+    "seo": null
+  }
+}

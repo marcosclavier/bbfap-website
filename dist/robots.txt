@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /admin
 
-Sitemap: https://www.bbfap.com/sitemap.xml
+Sitemap: https://belangerbrosseau.com/sitemap.xml

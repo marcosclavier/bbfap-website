@@ -30,6 +30,7 @@ const channelId = process.env.YOUTUBE_CHANNEL_ID || DEFAULT_CHANNEL_ID
 
 const blogOut = resolve(ROOT, 'src/data/blog.generated.json')
 const videosOut = resolve(ROOT, 'src/data/videos.generated.json')
+const pagesOut = resolve(ROOT, 'src/data/pages.generated.json')
 
 const sanityConfigured = projectId && projectId !== 'REPLACE_WITH_PROJECT_ID'
 
@@ -50,10 +51,36 @@ if (sanityConfigured) {
 
 const posts = await fetchBlogPosts()
 const videos = await fetchVideos()
+const pages = await fetchPages()
 
 await writeFile(blogOut, JSON.stringify(posts, null, 2))
 await writeFile(videosOut, JSON.stringify(videos, null, 2))
-console.log(`[build-content] Wrote ${posts.length} posts and ${videos.length} videos.`)
+await writeFile(pagesOut, JSON.stringify(pages, null, 2))
+console.log(
+  `[build-content] Wrote ${posts.length} posts, ${videos.length} videos, ${Object.keys(pages).length} CMS page(s).`,
+)
+
+async function fetchPages() {
+  // Marketing pages edited via the /admin section builder. Stored as `page` documents and
+  // emitted keyed by pageKey. A page only takes over its route once it appears here; until
+  // then the route renders its legacy hardcoded component (see the page components).
+  if (!sanityConfigured) {
+    console.log('[build-content] Sanity not configured — no CMS pages.')
+    return {}
+  }
+  // Read pages with the API token (server-side only; never shipped to the client) and bypass
+  // the CDN, so a page published moments before this build (via the deploy hook) is always
+  // reflected and authoritative — page edits must never lag a build.
+  const freshClient = sanityClient.withConfig({useCdn: false, token: process.env.SANITY_API_TOKEN})
+  const rows = await freshClient.fetch(`*[_type == "page"]{ pageKey, title, sections, seo }`)
+  const byKey = {}
+  for (const p of rows) {
+    if (p?.pageKey) {
+      byKey[p.pageKey] = {pageKey: p.pageKey, title: p.title || p.pageKey, sections: p.sections || [], seo: p.seo || null}
+    }
+  }
+  return byKey
+}
 
 async function fetchBlogPosts() {
   if (!sanityConfigured) {

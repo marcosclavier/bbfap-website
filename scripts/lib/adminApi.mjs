@@ -22,6 +22,37 @@ export const sanityConfigured =
 // overridable via ADMIN_USERNAME without a code change.
 export const ADMIN_USERNAME = (process.env.ADMIN_USERNAME || 'fbabeux@peakgroup.com').trim().toLowerCase()
 
+// Marketing pages editable through the /admin section builder. Keys map to routes and to
+// the deterministic Sanity doc _id `page.<key>`. Mirror studio/schemas/page.ts.
+export const PAGE_KEYS = [
+  'home',
+  'about',
+  'services',
+  'contact',
+  'conseiller-rive-sud',
+  'conseiller-montreal',
+]
+
+// Section object _type values the builder understands. Mirror src/sections/registry.js
+// and studio/schemas/page.ts.
+export const SECTION_TYPES = [
+  'heroSection',
+  'proseSection',
+  'splitProseSection',
+  'listSection',
+  'ctaSection',
+  'approachSection',
+  'serviceDetailSection',
+  'homeHeroSection',
+  'servicesSection',
+  'featureGridSection',
+  'contactFormSection',
+  'mapSection',
+  'servicesGridSection',
+  'areasSection',
+  'statsBandSection',
+]
+
 // Categories must mirror studio/schemas/blogPost.ts exactly.
 export const CATEGORIES = [
   'Placements',

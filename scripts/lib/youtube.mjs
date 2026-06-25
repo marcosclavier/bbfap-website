@@ -42,7 +42,7 @@ const xmlParser = new XMLParser({
 export async function fetchYouTubeFeed(channelId = DEFAULT_CHANNEL_ID) {
   const url = `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`
   const res = await fetch(url, {
-    headers: {'User-Agent': 'bbfap-com-build/1.0 (+https://www.bbfap.com)'},
+    headers: {'User-Agent': 'bbfap-com-build/1.0 (+https://belangerbrosseau.com)'},
   })
   if (!res.ok) {
     throw new Error(`YouTube RSS fetch failed: ${res.status} ${res.statusText}`)

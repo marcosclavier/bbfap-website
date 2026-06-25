@@ -5,6 +5,8 @@ import {
 } from 'lucide-react';
 import RichTextEditor from '../components/RichTextEditor';
 import { portableTextHasContent } from '../lib/portableTextTiptap';
+import { downscaleImage } from '../lib/imageUpload';
+import { PageList, PageBuilder } from './admin/PageBuilder';
 
 /*
  * /admin — self-serve blog editor for BBFAP (bypasses the Sanity Studio).
@@ -58,35 +60,6 @@ function toLocalInput(iso) {
   return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`;
 }
 
-// Downscale + JPEG-encode in the browser so the upload stays small and optimized.
-function downscaleImage(file, maxWidth = 1600) {
-  return new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    reader.onerror = () => reject(new Error('read_failed'));
-    reader.onload = () => {
-      const img = new Image();
-      img.onerror = () => reject(new Error('decode_failed'));
-      img.onload = () => {
-        const scale = Math.min(1, maxWidth / img.width);
-        const w = Math.round(img.width * scale);
-        const h = Math.round(img.height * scale);
-        const canvas = document.createElement('canvas');
-        canvas.width = w;
-        canvas.height = h;
-        const ctx = canvas.getContext('2d');
-        ctx.drawImage(img, 0, 0, w, h);
-        resolve({
-          dataBase64: canvas.toDataURL('image/jpeg', 0.82),
-          filename: (file.name || 'hero').replace(/\.[^.]+$/, '') + '.jpg',
-          contentType: 'image/jpeg',
-        });
-      };
-      img.src = reader.result;
-    };
-    reader.readAsDataURL(file);
-  });
-}
-
 export default function AdminPage() {
   const [username, setUsername] = useState(() => sessionStorage.getItem(SESSION_USER) || '');
   const [password, setPassword] = useState(() => sessionStorage.getItem(SESSION_KEY) || '');
@@ -95,12 +68,15 @@ export default function AdminPage() {
   const [authed, setAuthed] = useState(
     () => Boolean(sessionStorage.getItem(SESSION_USER) && sessionStorage.getItem(SESSION_KEY))
   );
+  const [tab, setTab] = useState('articles'); // 'articles' | 'pages'
   const [view, setView] = useState('list'); // 'list' | 'editor'
   const [editing, setEditing] = useState(null);
+  const [pageView, setPageView] = useState('list'); // 'list' | 'builder'
+  const [editingPage, setEditingPage] = useState(null);
 
   // Keep the editor out of search results.
   useEffect(() => {
-    document.title = 'Administration du blogue — BBFAP';
+    document.title = 'Administration — BBFAP';
     const meta = document.createElement('meta');
     meta.name = 'robots';
     meta.content = 'noindex, nofollow';
@@ -153,9 +129,25 @@ export default function AdminPage() {
     <div className="min-h-screen bg-gray-50">
       <header className="bg-white border-b border-gray-200 sticky top-0 z-10">
         <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
-          <h1 className="text-lg font-bold" style={{ color: BLUE }}>
-            Administration du blogue
-          </h1>
+          <div className="flex items-center gap-6">
+            <h1 className="text-lg font-bold" style={{ color: BLUE }}>
+              Administration
+            </h1>
+            <nav className="flex items-center gap-1">
+              {[['articles', 'Articles'], ['pages', 'Pages']].map(([key, label]) => (
+                <button
+                  key={key}
+                  onClick={() => setTab(key)}
+                  className={`px-3 py-1.5 text-sm font-semibold rounded-lg transition ${
+                    tab === key ? 'text-white' : 'text-gray-600 hover:bg-gray-100'
+                  }`}
+                  style={tab === key ? { backgroundColor: BLUE } : undefined}
+                >
+                  {label}
+                </button>
+              ))}
+            </nav>
+          </div>
           <button
             onClick={() => { sessionStorage.removeItem(SESSION_KEY); sessionStorage.removeItem(SESSION_USER); setAuthed(false); }}
             className="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900"
@@ -166,18 +158,33 @@ export default function AdminPage() {
       </header>
 
       <main className="max-w-5xl mx-auto px-4 py-8">
-        {view === 'list' ? (
-          <PostList
-            api={api}
-            onNew={() => { setEditing({ ...EMPTY_POST, publishedAt: new Date().toISOString() }); setView('editor'); }}
-            onEdit={(post) => { setEditing(post); setView('editor'); }}
-          />
+        {tab === 'articles' ? (
+          view === 'list' ? (
+            <PostList
+              api={api}
+              onNew={() => { setEditing({ ...EMPTY_POST, publishedAt: new Date().toISOString() }); setView('editor'); }}
+              onEdit={(post) => { setEditing(post); setView('editor'); }}
+            />
+          ) : (
+            <PostEditor
+              api={api}
+              initial={editing}
+              onBack={() => { setEditing(null); setView('list'); }}
+            />
+          )
         ) : (
-          <PostEditor
-            api={api}
-            initial={editing}
-            onBack={() => { setEditing(null); setView('list'); }}
-          />
+          pageView === 'list' ? (
+            <PageList
+              api={api}
+              onEdit={(page) => { setEditingPage(page); setPageView('builder'); }}
+            />
+          ) : (
+            <PageBuilder
+              api={api}
+              initial={editingPage}
+              onBack={() => { setEditingPage(null); setPageView('list'); }}
+            />
+          )
         )}
       </main>
     </div>
