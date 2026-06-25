@@ -90,7 +90,11 @@ function downscaleImage(file, maxWidth = 1600) {
 export default function AdminPage() {
   const [username, setUsername] = useState(() => sessionStorage.getItem(SESSION_USER) || '');
   const [password, setPassword] = useState(() => sessionStorage.getItem(SESSION_KEY) || '');
-  const [authed, setAuthed] = useState(false);
+  // Restore the session optimistically when credentials survive a refresh.
+  // The first /api/posts request re-validates them and a 401 clears the session.
+  const [authed, setAuthed] = useState(
+    () => Boolean(sessionStorage.getItem(SESSION_USER) && sessionStorage.getItem(SESSION_KEY))
+  );
   const [view, setView] = useState('list'); // 'list' | 'editor'
   const [editing, setEditing] = useState(null);
 
@@ -219,6 +223,8 @@ function LockScreen({ onUnlock }) {
         <p className="text-sm text-gray-500 text-center mb-6">Entrez vos identifiants pour continuer.</p>
         <input
           type="email"
+          name="username"
+          id="admin-username"
           value={user}
           onChange={(e) => setUser(e.target.value)}
           placeholder="Nom d’utilisateur"
@@ -229,6 +235,8 @@ function LockScreen({ onUnlock }) {
         />
         <input
           type="password"
+          name="password"
+          id="admin-password"
           value={pw}
           onChange={(e) => setPw(e.target.value)}
           placeholder="Mot de passe"
